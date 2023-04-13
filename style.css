@@ -174,7 +174,7 @@ input:focus {
 }
 .weare p {
   font-size: 20px;
-  font-family: "Montserrat-Light";
+  font-family: "Montserrat-Regular";
   margin: 25px 0;
   
 }
@@ -255,6 +255,9 @@ max-width: 65px;
   font-size: 27px;
   font-family:'Montserrat-Regular';
 }
+.video-button{
+  height: 407px;
+}
 .vide-title h2 {
   color: #f6c768;
   font-size: 40px;
@@ -262,16 +265,17 @@ max-width: 65px;
 }
 .vide-title p {
 	font-size: 20px;
+  font-family:'Montserrat-Regular';
 }
 .vide-title {
-  background-color: #333333c4;
+  background-color: #00000069;
   border-radius: 0 50px 50px 0;
   padding: 8px 3% 5px 10%;
 }
 .play-but img {
   width: 100%;
   max-width: 130px;
-  margin: 23% 45%;
+  margin: 12% 45%;
 }
 
 
