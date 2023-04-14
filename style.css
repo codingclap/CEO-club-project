@@ -260,22 +260,25 @@ max-width: 65px;
 }
 .vide-title h2 {
   color: #f6c768;
-  font-size: 40px;
+  font-size: 35px;
   font-family: "Montserrat-Bold";
 }
 .vide-title p {
-	font-size: 20px;
+	font-size: 17px;
   font-family:'Montserrat-Regular';
 }
 .vide-title {
   background-color: #00000069;
   border-radius: 0 50px 50px 0;
-  padding: 8px 3% 5px 10%;
+  padding: 8px 3% 5px 5%;
 }
 .play-but img {
   width: 100%;
-  max-width: 130px;
-  margin: 8% 45%;
+  max-width: 120px;
+  /* margin: 8% 45%; */
+  position: absolute;
+  left: 50%;
+  top: 154px;
 }
 
 
@@ -515,7 +518,7 @@ transform: scale(1.08);
   padding:5%;
 }
 .why-tet-desc p {
-  font-size: 25px !important;
+  font-size: 22px !important;
   position: relative;
   z-index: 99;
   padding-bottom: 50px;
@@ -828,11 +831,12 @@ transform: scale(1.08);
 	font-size: 30px;
 }
 .vide-title p {
-  font-size: 18px;
+  font-size: 15px;
 }
 .play-but img {
-  max-width: 100px;
-  margin: 25% 45%;
+  max-width: 90px; 
+  left: 47%;
+  top: 190px;
 }
 .head h2 {
   font-size: 30px;
@@ -876,7 +880,9 @@ transform: scale(1.08);
   font-size: 13px;
 }
 .play-but img{
-	display: none;
+  top: 190px;
+  max-width: 80px;
+  left: 45%;
 }
 .sin-up input{
 	width: 70%;
