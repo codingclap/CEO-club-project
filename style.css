@@ -1521,7 +1521,7 @@ a img.aligncenter {
   font-size: 15px;
   font-family: "Montserrat-Medium";
   padding-bottom: 120px !important;
-  height: 420px;
+  min-height: 220px;
 }
 .te-name {
   font-size: 18px;
@@ -1545,7 +1545,7 @@ a img.aligncenter {
   line-height: 28px;
   font-weight: 800;
  right: 0;
- top: 235px;
+ top: 35%;
  
 }
 .testmonial .slick-prev::after {
@@ -1558,7 +1558,7 @@ a img.aligncenter {
   line-height: 28px;
   font-weight: 800;
   left: 0;
-  top: 235px;
+  top: 35%;
 }
 .testmonial .slick-next,  .testmonial .slick-prev{
   font-size: 0;
