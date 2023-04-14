@@ -33,7 +33,7 @@ jQuery(document).ready(function(jQuery) {
         }]
     }); 
 	
-	
+	/**testimonial **/
       jQuery('.whole-test').slick({
         dots: false,
         infinite: true,

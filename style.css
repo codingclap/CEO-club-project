@@ -283,7 +283,7 @@ max-width: 65px;
 
 
 .why-slider {
-  background-image: url('img/membership-1.jpg');
+  background-image: url('img/membership-1.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -293,7 +293,7 @@ max-width: 65px;
   min-height: 500px;
 }
 .why-slider-1 {
-  background-image: url('img/membership-2.jpg');
+  background-image: url('img/membership-2.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -303,7 +303,7 @@ max-width: 65px;
   min-height: 500px;
 }
 .why-slider-2 {
-  background-image: url('img/membership-3.jpg');
+  background-image: url('img/membership-3.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -313,7 +313,7 @@ max-width: 65px;
   min-height: 500px;
 }
 .why-slider-3 {
-  background-image: url('img/membership-4.jpg');
+  background-image: url('img/membership-4.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -323,7 +323,7 @@ max-width: 65px;
   min-height: 500px;
 }
 .why-slider-4 {
-  background-image: url('img/membership-5.jpg');
+  background-image: url('img/membership-5.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -333,7 +333,7 @@ max-width: 65px;
   min-height: 500px;
 }
 .why-slider-5 {
-  background-image: url('img/membership-6.jpg');
+  background-image: url('img/membership-6.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -637,6 +637,7 @@ transform: scale(1.08);
   font-size: 14px;
   font-weight: 600;
   color: #fff;
+  text-transform: uppercase;
 }
 .footer-nav ul li a {
 	color: #858383;
@@ -1520,8 +1521,8 @@ a img.aligncenter {
   border: 2px solid #ebc848;
   font-size: 15px;
   font-family: "Montserrat-Medium";
-  padding-bottom: 120px !important;
-  min-height: 220px;
+  padding-bottom: 88px !important;
+  min-height: 190px;
 }
 .te-name {
   font-size: 18px;
