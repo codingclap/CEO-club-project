@@ -325,7 +325,7 @@ input:focus {
 
 
 .why-slider {
-  background-image: url('img/membership-1.webp');
+  background-image: url('img/inner-circles.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -336,7 +336,7 @@ input:focus {
 }
 
 .why-slider-1 {
-  background-image: url('img/membership-2.webp');
+  background-image: url('img/knowledge-leadership-series.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -347,7 +347,7 @@ input:focus {
 }
 
 .why-slider-2 {
-  background-image: url('img/membership-3.webp');
+  background-image: url('img/business-series-events.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -358,7 +358,7 @@ input:focus {
 }
 
 .why-slider-3 {
-  background-image: url('img/membership-4.webp');
+  background-image: url('img/social-series-events.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -369,7 +369,7 @@ input:focus {
 }
 
 .why-slider-4 {
-  background-image: url('img/membership-5.webp');
+  background-image: url('img/chapter-retreat.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -380,7 +380,7 @@ input:focus {
 }
 
 .why-slider-5 {
-  background-image: url('img/membership-6.webp');
+  background-image: url('img/annual-national.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -408,6 +408,7 @@ input:focus {
   position: absolute;
   top: 0;
   border-radius: 20px;
+
 }
 
 .slick-active.slick-center .why-slider-2::after {
