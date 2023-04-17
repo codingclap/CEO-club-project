@@ -1021,7 +1021,7 @@ input:focus {
 }
 
 @media only screen and (max-width:995px) {
-   
+
   .membership-padding {
     padding: 5em 0px 0px 0px;
   }
@@ -1418,23 +1418,25 @@ a img.aligncenter {
   width: 100%;
   height: 500px;
 }
-.padd-right{
-padding-right: unset;
+
+.padd-right {
+  padding-right: unset;
 }
 
-.padd-left{
+.padd-left {
   padding-left: unset;
 }
 
 @media only screen and (min-width:992px) {
-  .padd-right{
-    padding-right: 9em!important;
-    }
-    
-    .padd-left{
-      padding-left: 9em!important;
-    }
+  .padd-right {
+    padding-right: 9em !important;
   }
+
+  .padd-left {
+    padding-left: 9em !important;
+  }
+}
+
 @media (min-width: 100px) and (max-width: 991px) {
 
   .bor-ri {
@@ -1473,6 +1475,23 @@ padding-right: unset;
   .carousel-wrap {
     width: 350px;
     height: 345px;
+  }
+
+  .main-cont h1,
+  .head-val h2,
+  .main-cont-member h1 {
+    font-size: 30px;
+  }
+
+  .row-gap {
+    row-gap: 2em;
+  }
+  .membership-text h2{
+    font-size: 30px;
+    text-align: center;
+  }
+  .membership-text p{
+    text-align: center;
   }
 }
 
@@ -1815,10 +1834,12 @@ padding-right: unset;
   width: 28%;
   margin: 0 auto;
 }
+
 .found .head-val h2::before {
   width: 28%;
   margin: 0 auto;
 }
+
 .vis-mis p {
   color: #ebc848;
   font-size: 40px;
