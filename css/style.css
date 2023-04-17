@@ -843,7 +843,9 @@ input:focus {
 .membership-img {
   position: relative;
 }
-
+.row-gap{
+  row-gap: 4em;
+}
 .membership-img:after{
   content: "";
   position: absolute;
@@ -1010,6 +1012,12 @@ input:focus {
 }
 
 @media only screen and (max-width:995px) {
+  .membership-padding {
+    padding: 5em 0px 0px 0px;
+}
+.row-gap {
+  row-gap: 4em;
+}
   .weare {
     border-radius: 12px 12px 0 0;
     padding: 4% 6%;
