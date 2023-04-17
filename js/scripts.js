@@ -38,7 +38,7 @@ jQuery(document).ready(function (jQuery) {
     dots: false,
     infinite: true,
     speed: 1500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
@@ -57,7 +57,7 @@ jQuery(document).ready(function (jQuery) {
       breakpoint: 1400,
       settings: {
         arrows: false,
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
 
         arrows: true,

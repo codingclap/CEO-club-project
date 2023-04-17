@@ -35,7 +35,7 @@ body {
   color: #000;
   background-color: #0c0c31 !important;
 }
-
+ 
 /* clear */
 .clear:before,
 .clear:after {
@@ -271,7 +271,7 @@ input:focus {
 }
 
 .main-cont h1,
-.head-val h2 {
+.head-val h2,.main-cont-member h1 {
   font-family: "Montserrat-Bold";
   font-size: 50px;
   color: #f6c768;
@@ -286,6 +286,7 @@ input:focus {
   text-align: center;
   width: 480px;
   border-radius: 50px;
+  
 }
 
 .main-cont p {
@@ -293,6 +294,21 @@ input:focus {
   font-family: 'Montserrat-Regular';
 }
 
+.main-cont-member h1::before {
+  content: '';
+  position: absolute;
+  border-bottom: 3px solid #f6c768;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  border-radius: 50px;
+  left:0%;
+  right:0px;
+}
+.main-cont-member p {
+  font-size: 27px;
+  font-family: 'Montserrat-Regular';
+}
 .video-button {
   height: 407px;
 }
@@ -325,7 +341,7 @@ input:focus {
 
 
 .why-slider {
-  background-image: url('img/inner-circles.webp');
+  background-image: url('../img/inner-circles.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -336,7 +352,7 @@ input:focus {
 }
 
 .why-slider-1 {
-  background-image: url('img/knowledge-leadership-series.webp');
+  background-image: url('../img/knowledge-leadership-series.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -347,7 +363,7 @@ input:focus {
 }
 
 .why-slider-2 {
-  background-image: url('img/business-series-events.webp');
+  background-image: url('../img/business-series-events.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -358,7 +374,7 @@ input:focus {
 }
 
 .why-slider-3 {
-  background-image: url('img/social-series-events.webp');
+  background-image: url('../img/social-series-events.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -369,7 +385,7 @@ input:focus {
 }
 
 .why-slider-4 {
-  background-image: url('img/chapter-retreat.webp');
+  background-image: url('../img/chapter-retreat.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -380,7 +396,7 @@ input:focus {
 }
 
 .why-slider-5 {
-  background-image: url('img/annual-national.webp');
+  background-image: url('../img/annual-national.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -803,10 +819,22 @@ input:focus {
 
 
 /*------------------------------------*\
-    PAGES
+   Value of membership - PAGES
 \*------------------------------------*/
 
-
+.membership-text h2{
+  font-family: "Montserrat-Bold";
+  font-size: 40px;
+  color: #f6c768;
+}
+.membership-text p{
+  font-size: 18px;
+  font-family: "Montserrat-Medium";
+  color: #fff;
+}
+/*------------------------------------*\
+   Value of membership - PAGES
+\*------------------------------------*/
 
 /*------------------------------------*\
     IMAGES
@@ -820,38 +848,38 @@ input:focus {
 
 @font-face {
   font-family: "Montserrat-Bold";
-  src: url('fonts/Montserrat-Bold.ttf');
-  src: url('fonts/Montserrat-Bold.ttf') format('embedded-opentype'),
-    url('fonts/Montserrat-Bold.ttf') format('ttf'),
-    url('fonts/Montserrat-Bold.ttf') format('ttf'),
-    url('fonts/Montserrat-Bold.ttf') format('truetype');
+  src: url('../fonts/Montserrat-Bold.ttf');
+  src: url('../fonts/Montserrat-Bold.ttf') format('embedded-opentype'),
+    url('../fonts/Montserrat-Bold.ttf') format('ttf'),
+    url('../fonts/Montserrat-Bold.ttf') format('ttf'),
+    url('../fonts/Montserrat-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "Montserrat-Light";
-  src: url('fonts/Montserrat-Light.ttf');
-  src: url('fonts/Montserrat-Light.ttf') format('embedded-opentype'),
-    url('fonts/Montserrat-Light.ttf') format('ttf'),
-    url('fonts/Montserrat-Light.ttf') format('ttf'),
-    url('fonts/Montserrat-Light.ttf') format('truetype');
+  src: url('../fonts/Montserrat-Light.ttf');
+  src: url('../fonts/Montserrat-Light.ttf') format('embedded-opentype'),
+    url('../fonts/Montserrat-Light.ttf') format('ttf'),
+    url('../fonts/Montserrat-Light.ttf') format('ttf'),
+    url('../fonts/Montserrat-Light.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "Montserrat-Medium";
-  src: url('fonts/Montserrat-Medium.ttf');
-  src: url('fonts/Montserrat-Medium.ttf') format('embedded-opentype'),
-    url('fonts/Montserrat-Medium.ttf') format('ttf'),
-    url('fonts/Montserrat-Medium.ttf') format('ttf'),
-    url('fonts/Montserrat-Medium.ttf') format('truetype');
+  src: url('../fonts/Montserrat-Medium.ttf');
+  src: url('../fonts/Montserrat-Medium.ttf') format('embedded-opentype'),
+    url('../fonts/Montserrat-Medium.ttf') format('ttf'),
+    url('../fonts/Montserrat-Medium.ttf') format('ttf'),
+    url('../fonts/Montserrat-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "Montserrat-Regular";
-  src: url('fonts/Montserrat-Regular.ttf');
-  src: url('fonts/Montserrat-Regular.ttf') format('embedded-opentype'),
-    url('fonts/Montserrat-Regular.ttf') format('ttf'),
-    url('fonts/Montserrat-Regular.ttf') format('ttf'),
-    url('fonts/Montserrat-Regular.ttf') format('truetype');
+  src: url('../fonts/Montserrat-Regular.ttf');
+  src: url('../fonts/Montserrat-Regular.ttf') format('embedded-opentype'),
+    url('../fonts/Montserrat-Regular.ttf') format('ttf'),
+    url('../fonts/Montserrat-Regular.ttf') format('ttf'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype');
 }
 
 
@@ -1676,7 +1704,7 @@ a img.aligncenter {
 }
 
 .wold-map {
-  background-image: url("img/world-background.jpg");
+  background-image: url("../img/world-background.jpg");
   width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1821,7 +1849,7 @@ a img.aligncenter {
   font-size: 15px;
   font-family: "Montserrat-Medium";
   padding-bottom: 88px !important;
-  min-height: 190px;
+  min-height: 380px;
 }
 
 .te-name {
