@@ -1021,6 +1021,7 @@ input:focus {
 }
 
 @media only screen and (max-width:995px) {
+   
   .membership-padding {
     padding: 5em 0px 0px 0px;
   }
@@ -1417,9 +1418,23 @@ a img.aligncenter {
   width: 100%;
   height: 500px;
 }
+.padd-right{
+padding-right: unset;
+}
 
+.padd-left{
+  padding-left: unset;
+}
 
-
+@media only screen and (min-width:992px) {
+  .padd-right{
+    padding-right: 9em!important;
+    }
+    
+    .padd-left{
+      padding-left: 9em!important;
+    }
+  }
 @media (min-width: 100px) and (max-width: 991px) {
 
   .bor-ri {
