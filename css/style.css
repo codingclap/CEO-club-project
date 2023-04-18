@@ -295,7 +295,7 @@ input:focus {
 }
 
 .main-cont p {
-  font-size: 22px;
+  font-size: 20px;
   font-family: 'Montserrat-Regular';
 }
 
@@ -658,7 +658,7 @@ input:focus {
 }
 
 .head p {
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Montserrat-Medium";
 }
 
@@ -1101,7 +1101,7 @@ input:focus {
   }
 
   .head p {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .whole-patners h2 {
@@ -1867,13 +1867,13 @@ a img.aligncenter {
 }
 
 .val-row p {
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Montserrat-Medium";
 }
 
 .val-row h3 {
   color: #ebc848;
-  font-size: 34px;
+  font-size: 30px;
   font-family: "Montserrat-Medium";
   margin: 14px 0;
 }
@@ -1884,20 +1884,20 @@ a img.aligncenter {
 
 .found-row h3 {
   color: #ebc848;
-  font-size: 45px;
+  font-size: 30px;
   font-family: "Montserrat-Medium";
   font-weight: 800;
 }
 
 .found-row h4 {
   color: #ebc848;
-  font-size: 35px;
+  font-size: 25px;
   font-family: "Montserrat-Regular";
 }
 
 .found-row p {
   color: #fff;
-  font-size: 21px;
+  font-size: 20px;
   font-family: "Montserrat-Regular";
 }
 
@@ -1921,7 +1921,7 @@ a img.aligncenter {
 }
 
 .over p {
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Montserrat-Regular";
 }
 
@@ -1931,7 +1931,7 @@ a img.aligncenter {
 
 .val-row img {
   width: 100%;
-  max-width: 180px;
+  max-width: 140px;
 }
 
 .about {
@@ -1951,7 +1951,7 @@ a img.aligncenter {
 .testmonial .card-body {
   border-radius: 10px;
   border: 2px solid #ebc848;
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Montserrat-Medium";
   padding-bottom: 88px !important;
   min-height: 380px;
