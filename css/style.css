@@ -107,7 +107,7 @@ input:focus {
 
 /* nav */
 .desk-menu {
-  padding: 2% 0;
+  padding: 2% 0 2% 0;
 }
 
 .desk-menu .nav ul {
@@ -1014,7 +1014,9 @@ input:focus {
 
 
 @media only screen and (max-width:1000px) {
-
+  .desk-menu {
+    padding: 4% 0 4% 0;
+  }
   .footer-nav ul li {
     margin-bottom: 10px;
   }
@@ -1496,6 +1498,9 @@ a img.aligncenter {
 }
 
 @media (max-width: 480px) {
+  .desk-menu {
+    padding: 4% 0 6% 0;
+  }
   .carousel-wrap {
     width: 240px;
     height: 408px;
