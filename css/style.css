@@ -1058,7 +1058,7 @@ input:focus {
   }
 
   .main-cont p {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .vide-title h2 {
@@ -1172,7 +1172,7 @@ input:focus {
   }
 
   .why-slider h3 {
-    font-size: 20px !important;
+    font-size: 25px !important;
   }
 
   .why-tet-desc p {
@@ -1181,7 +1181,7 @@ input:focus {
 
   .main-cont h1,
   .head-val h2 {
-    font-size: 30px !important;
+    font-size: 25px !important;
   }
 
 }
@@ -1499,10 +1499,10 @@ a img.aligncenter {
 
 @media (max-width: 480px) {
   .weare h3 { 
-    font-size: 25px;
+    font-size: 23px;
 }
   .weare p {
-    font-size: 14px; 
+    font-size: 15px; 
     margin: 5px 0 4px 0px;
 }
   .desk-menu {
@@ -1511,6 +1511,9 @@ a img.aligncenter {
   .carousel-wrap {
     width: 240px;
     height: 408px;
+  }
+  .main-cont p {
+    font-size: 18px;
   }
 
 }
@@ -1568,7 +1571,7 @@ a img.aligncenter {
 @media (max-width: 500px) {
 
   .testmonial .card-body {
-    height: 540px !important;
+    min-height: 540px;
   }
 }
 
@@ -1702,7 +1705,7 @@ a img.aligncenter {
 
   .main-cont h1,
   .head-val h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .head-val h2::before {
@@ -1800,9 +1803,37 @@ a img.aligncenter {
   }
 
   .main-cont p {
-    font-size: 18px !important;
+    font-size: 15px;
   }
-
+  .head h2 {
+    font-size: 25px;
+}
+.why-slider-1 h3{
+  font-size: 25px;
+}
+.why-slider-2 h3{
+  font-size: 25px;
+}
+.why-slider-3 h3{
+  font-size: 25px;
+}
+.why-slider-4 h3{
+  font-size: 25px;
+}
+.why-slider-5 h3{
+  font-size: 25px;
+}
+.why-slider-6 h3{
+  font-size: 25px;
+}
+.why-tet-desc p {
+  font-size: 15px !important;
+}
+.testmonial .card-body{
+  font-size:15px!important;
+  min-height:300px!important;
+}
+ 
 }
 
 .wold-map {
