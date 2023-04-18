@@ -282,8 +282,7 @@ input:focus {
 .main-cont h1::before {
   content: '';
   position: absolute;
-  border-bottom: 3px solid #f6c768;
-  top: 65px;
+  border-bottom: 3px solid #f6c768; 
   text-align: center;
   width: 35%;
   left: 0%;
@@ -654,7 +653,7 @@ input:focus {
   width: 55px;
   transform: rotate(90deg);
   left: -55px;
-  top: 28px;
+  top: 36%;
 }
 
 .head p {
@@ -665,7 +664,7 @@ input:focus {
 .upcoming .head::before {
   width: 95px;
   left: -80px;
-  top: 54px;
+  top: 40%;
 }
 
 .carousel .slick-slide {
@@ -1050,8 +1049,7 @@ input:focus {
     font-size: 30px;
   }
 
-  .main-cont h1::before {
-    top: 50px;
+  .main-cont h1::before { 
     width: 35%;
     right: 0;
     left: 0;
@@ -1099,7 +1097,7 @@ input:focus {
 
   .upcoming .head::before {
     width: 80px;
-    top: 35px;
+    top: 35%;
     left: -65px;
   }
 
@@ -1731,11 +1729,11 @@ a img.aligncenter {
   }
 
   .head-val h2::before {
-    width: 200px !important;
+    width: 170px !important;
   }
 
   .found .head-val h2::before {
-    width: 250px !important;
+    width: 195px !important;
   }
 
   .over h2 {
@@ -1904,6 +1902,9 @@ a img.aligncenter {
     right: 4px;
     top: 4px;
   }
+  .head::before { 
+    top: 34%;
+  }
 }
 
 .wold-map {
@@ -1970,8 +1971,7 @@ a img.aligncenter {
   content: '';
   position: absolute;
   border-bottom: 3px solid #f6c768;
-  bottom: 0px;
-  top: 65px;
+  bottom: 0px; 
   left: 0%;
   right: 0px;
   text-align: center;
