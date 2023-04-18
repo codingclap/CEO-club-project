@@ -1017,6 +1017,7 @@ input:focus {
   .desk-menu {
     padding: 4% 0 4% 0;
   }
+
   .footer-nav ul li {
     margin-bottom: 10px;
   }
@@ -1488,43 +1489,54 @@ a img.aligncenter {
   .row-gap {
     row-gap: 2em;
   }
-  .membership-text h2{
+
+  .membership-text h2 {
     font-size: 30px;
     text-align: center;
   }
-  .membership-text p{
+
+  .membership-text p {
     text-align: center;
   }
 }
 
 @media (max-width: 480px) {
-  .weare h3 { 
+  .weare h3 {
     font-size: 23px;
-}
+  }
+
   .weare p {
-    font-size: 13px; 
+    font-size: 14px;
     margin: 5px 0 4px 0px;
-}
+  }
+
   .desk-menu {
     padding: 4% 0 6% 0;
   }
+
   .carousel-wrap {
     width: 240px;
     height: 408px;
   }
+
   .main-cont p {
-    font-size: 13px;
+    font-size: 14px;
   }
-  .main-cont h1, .head-val h2, .main-cont-member h1 {
+
+  .main-cont h1,
+  .head-val h2,
+  .main-cont-member h1 {
     font-size: 25px;
-}
-.membership-text h2 {
-  font-size: 25px;
-  text-align: center;
-}
-.membership-text p{
-  font-size: 13px;
-}
+  }
+
+  .membership-text h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .membership-text p {
+    font-size: 14px;
+  }
 
 }
 
@@ -1770,7 +1782,7 @@ a img.aligncenter {
   }
 
   .over p {
-    font-size: 13px !important;
+    font-size: 14px !important;
   }
 
   .val-row img {
@@ -1782,7 +1794,7 @@ a img.aligncenter {
   }
 
   .val-row p {
-    font-size: 13px !important;
+    font-size: 14px !important;
   }
 
   .found-row img {
@@ -1800,7 +1812,7 @@ a img.aligncenter {
 
   .found-row p {
     color: #fff;
-    font-size: 13px ! important;
+    font-size: 14px ! important;
   }
 
   .vis-mis p {
@@ -1813,61 +1825,85 @@ a img.aligncenter {
   }
 
   .main-cont p {
-    font-size: 13px;
+    font-size: 14px;
   }
+
   .head h2 {
     font-size: 25px;
-}
-.why-slider-1 h3{
-  font-size: 23px;
-}
-.why-slider-2 h3{
-  font-size: 23px;
-}
-.why-slider-3 h3{
-  font-size: 23px;
-}
-.why-slider-4 h3{
-  font-size: 23px;
-}
-.why-slider-5 h3{
-  font-size: 23px;
-}
-.why-slider-6 h3{
-  font-size: 23px;
-}
-.why-tet-desc p {
-  font-size: 13px !important;
-}
-.testmonial .card-body{
-  font-size:13px!important;
-  min-height:300px!important;
-}
-.why-slider{
-  min-height: 360px; 
-}
-.why-slider-1{
-  min-height: 360px; 
- }
- .why-slider-2{
-  min-height: 360px; 
- }
- .why-slider-3{
-  min-height: 360px; 
- }
- .why-slider-4{
-  min-height: 360px; 
- }
- .why-slider-5{
-  min-height: 360px; 
- }
-.why-slider-6{
- min-height: 360px; 
-}
-.count-up h3{
-  font-size: 13px!important;
-}
- 
+  }
+
+  .why-slider-1 h3 {
+    font-size: 23px;
+  }
+
+  .why-slider-2 h3 {
+    font-size: 23px;
+  }
+
+  .why-slider-3 h3 {
+    font-size: 23px;
+  }
+
+  .why-slider-4 h3 {
+    font-size: 23px;
+  }
+
+  .why-slider-5 h3 {
+    font-size: 23px;
+  }
+
+  .why-slider-6 h3 {
+    font-size: 23px;
+  }
+
+  .why-tet-desc p {
+    font-size: 14px !important;
+  }
+
+  .testmonial .card-body {
+    font-size: 14px !important;
+    min-height: 300px !important;
+  }
+
+  .why-slider {
+    min-height: 360px;
+  }
+
+  .why-slider-1 {
+    min-height: 360px;
+  }
+
+  .why-slider-2 {
+    min-height: 360px;
+  }
+
+  .why-slider-3 {
+    min-height: 360px;
+  }
+
+  .why-slider-4 {
+    min-height: 360px;
+  }
+
+  .why-slider-5 {
+    min-height: 360px;
+  }
+
+  .why-slider-6 {
+    min-height: 360px;
+  }
+
+  .count-up h3 {
+    font-size: 14px !important;
+  }
+  .membership-img-odd:after{
+    left: 4px;
+    top: 4px;
+  }
+  .membership-img:after { 
+    right: 4px;
+    top: 4px;
+  }
 }
 
 .wold-map {
