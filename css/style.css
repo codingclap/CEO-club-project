@@ -1502,7 +1502,7 @@ a img.aligncenter {
     font-size: 23px;
 }
   .weare p {
-    font-size: 15px; 
+    font-size: 13px; 
     margin: 5px 0 4px 0px;
 }
   .desk-menu {
@@ -1760,7 +1760,7 @@ a img.aligncenter {
   }
 
   .over p {
-    font-size: 16px !important;
+    font-size: 13px !important;
   }
 
   .val-row img {
@@ -1803,35 +1803,59 @@ a img.aligncenter {
   }
 
   .main-cont p {
-    font-size: 15px;
+    font-size: 13px;
   }
   .head h2 {
     font-size: 25px;
 }
 .why-slider-1 h3{
-  font-size: 25px;
+  font-size: 23px;
 }
 .why-slider-2 h3{
-  font-size: 25px;
+  font-size: 23px;
 }
 .why-slider-3 h3{
-  font-size: 25px;
+  font-size: 23px;
 }
 .why-slider-4 h3{
-  font-size: 25px;
+  font-size: 23px;
 }
 .why-slider-5 h3{
-  font-size: 25px;
+  font-size: 23px;
 }
 .why-slider-6 h3{
-  font-size: 25px;
+  font-size: 23px;
 }
 .why-tet-desc p {
-  font-size: 15px !important;
+  font-size: 13px !important;
 }
 .testmonial .card-body{
-  font-size:15px!important;
+  font-size:13px!important;
   min-height:300px!important;
+}
+.why-slider{
+  min-height: 360px; 
+}
+.why-slider-1{
+  min-height: 360px; 
+ }
+ .why-slider-2{
+  min-height: 360px; 
+ }
+ .why-slider-3{
+  min-height: 360px; 
+ }
+ .why-slider-4{
+  min-height: 360px; 
+ }
+ .why-slider-5{
+  min-height: 360px; 
+ }
+.why-slider-6{
+ min-height: 360px; 
+}
+.count-up h3{
+  font-size: 13px!important;
 }
  
 }
