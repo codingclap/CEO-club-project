@@ -1498,6 +1498,13 @@ a img.aligncenter {
 }
 
 @media (max-width: 480px) {
+  .weare h3 { 
+    font-size: 25px;
+}
+  .weare p {
+    font-size: 14px; 
+    margin: 5px 0 4px 0px;
+}
   .desk-menu {
     padding: 4% 0 6% 0;
   }
