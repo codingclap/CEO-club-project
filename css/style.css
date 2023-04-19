@@ -971,6 +971,7 @@ input:focus {
 
   .desk-menu .nav li {
     display: list-item;
+    text-align: center;
   }
 
   .seac input {
