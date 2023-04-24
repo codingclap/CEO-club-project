@@ -938,8 +938,8 @@ input:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width:100%; */
-  /* max-width: 380px; */
+   width:100%;
+ max-width: 380px;
   min-height: 440px;
   border: 2px solid #f6c768;
   border-radius: 20px;
@@ -980,7 +980,16 @@ input:focus {
   padding-bottom: 25px;
 }
 .boxes_container .chapter-height {
-  min-height: 160px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   width:100%;
+ max-width: 380px;  
+  border-radius: 20px;
+  padding: 20px 10px 20px 10px;
+  position: relative;
+  background-color: #0e0f3f;
 }
 .boxes_container .chapter-items {
   display: flex;
@@ -1144,7 +1153,9 @@ input:focus {
     gap: 30px;
   }
   .boxes_container .chapter-height {
-    min-height: 140px;
+    min-height: 150px;
+    padding: 3px 10px 3px 10px;
+
   }
   .boxes_container .chapter-items h3 { 
     font-size: 18px; 
