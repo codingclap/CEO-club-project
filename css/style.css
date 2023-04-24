@@ -938,8 +938,8 @@ input:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-   width:100%;
- max-width: 380px;
+  width: 100%;
+  max-width: 380px;
   min-height: 440px;
   border: 2px solid #f6c768;
   border-radius: 20px;
@@ -965,7 +965,7 @@ input:focus {
   font-size: 24px;
   text-align: center;
   font-family: "Montserrat-Bold";
-  font-weight:500;
+  font-weight: 500;
 }
 
 .boxes_container .boxes_element p {
@@ -979,23 +979,25 @@ input:focus {
   width: 70%;
   padding-bottom: 25px;
 }
+
 .boxes_container .chapter-height {
   min-height: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
-   width:100%;
- max-width: 380px;  
+  width: 100%;
+  max-width: 380px;
   border-radius: 20px;
   padding: 20px 10px 20px 10px;
   position: relative;
   background-color: #0e0f3f;
 }
+
 .boxes_container .chapter-items {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:20px;
+  gap: 20px;
 }
 
 .boxes_container .chapter-items h3 {
@@ -1004,11 +1006,12 @@ input:focus {
   text-align: center;
   font-family: "Montserrat-Medium";
   font-weight: 600;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
-.boxes_container .chapter-items:hover h3{
+
+.boxes_container .chapter-items:hover h3 {
   border-bottom: 2px solid #f6c768;
-      padding-bottom: 6px;
+  padding-bottom: 6px;
 }
 
 /*------------------------------------*\
@@ -1152,13 +1155,15 @@ input:focus {
   .boxes_container {
     gap: 30px;
   }
+
   .boxes_container .chapter-height {
     min-height: 150px;
     padding: 3px 10px 3px 10px;
 
   }
-  .boxes_container .chapter-items h3 { 
-    font-size: 18px; 
+
+  .boxes_container .chapter-items h3 {
+    font-size: 18px;
   }
 }
 
