@@ -33,7 +33,7 @@ html {
 body {
   font-family: "Montserrat-Regular";
   color: #000;
-  background-color: #0c0c31 !important;
+  background-color: #0e0f3f !important;
 }
 
 /* clear */
@@ -272,7 +272,9 @@ input:focus {
 
 .main-cont h1,
 .head-val h2,
-.main-cont-member h1 {
+.main-cont-member h1,
+.main-cont-capter h1,
+.main-cont-council h1 {
   font-family: "Montserrat-Bold";
   font-size: 40px;
   color: #f6c768;
@@ -282,7 +284,7 @@ input:focus {
 .main-cont h1::before {
   content: '';
   position: absolute;
-  border-bottom: 3px solid #f6c768; 
+  border-bottom: 3px solid #f6c768;
   text-align: center;
   width: 35%;
   left: 0%;
@@ -312,6 +314,42 @@ input:focus {
 }
 
 .main-cont-member p {
+  font-size: 27px;
+  font-family: 'Montserrat-Regular';
+}
+
+.main-cont-capter h1::before {
+  content: '';
+  position: absolute;
+  border-bottom: 3px solid #f6c768;
+  bottom: 0px;
+  text-align: center;
+  width: 20%;
+  border-radius: 50px;
+  left: 0%;
+  right: 0px;
+  margin: 0 auto;
+}
+
+.main-cont-capter p {
+  font-size: 27px;
+  font-family: 'Montserrat-Regular';
+}
+
+.main-cont-council h1::before {
+  content: '';
+  position: absolute;
+  border-bottom: 3px solid #f6c768;
+  bottom: 0px;
+  text-align: center;
+  width: 30%;
+  border-radius: 50px;
+  left: 0%;
+  right: 0px;
+  margin: 0 auto;
+}
+
+.main-cont-council p {
   font-size: 27px;
   font-family: 'Montserrat-Regular';
 }
@@ -883,6 +921,90 @@ input:focus {
    Value of membership - PAGES
 \*------------------------------------*/
 
+
+/*------------------------------------*\
+            Clubs - PAGES
+\*------------------------------------*/
+.boxes_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+
+.boxes_container .boxes_element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width:100%; */
+  /* max-width: 380px; */
+  min-height: 440px;
+  border: 2px solid #f6c768;
+  border-radius: 20px;
+  padding: 20px 10px 20px 10px;
+  position: relative;
+  background-color: #0e0f3f;
+}
+
+.boxes_container .boxes_element:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  top: 15px;
+  left: 15px;
+  border-radius: 30px;
+  z-index: -1;
+}
+
+.boxes_container .boxes_element h3 {
+  color: #f6c768;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Montserrat-Bold";
+  font-weight:500;
+}
+
+.boxes_container .boxes_element p {
+  color: #f6c768;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Montserrat-Regular";
+}
+
+.boxes_container .boxes_element img {
+  width: 75%;
+  padding-bottom: 25px;
+}
+.boxes_container .chapter-height {
+  min-height: 160px;
+}
+.boxes_container .chapter-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px;
+}
+
+.boxes_container .chapter-items h3 {
+  color: #ebc848;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Montserrat-Medium";
+  font-weight: 600;
+  text-transform: uppercase; 
+}
+.boxes_container .chapter-items:hover h3{
+  border-bottom: 2px solid #f6c768;
+      padding-bottom: 6px;
+}
+
+/*------------------------------------*\
+            Clubs - PAGES
+\*------------------------------------*/
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/
@@ -943,6 +1065,13 @@ input:focus {
 }
 
 @media only screen and (max-width:1399px) {
+  .boxes_container .boxes_element h3 {
+    font-size: 20px;
+  }
+
+  .boxes_container .boxes_element {
+    min-height: 380px;
+  }
 
   .sin-up {
     padding-left: 0 ! important;
@@ -1010,8 +1139,32 @@ input:focus {
     font-family: "Montserrat-Regular";
     margin: 14px 0 4px 0px;
   }
+
+  .boxes_container {
+    gap: 30px;
+  }
+  .boxes_container .chapter-height {
+    min-height: 140px;
+  }
+  .boxes_container .chapter-items h3 { 
+    font-size: 18px; 
+  }
 }
 
+@media only screen and (max-width:1150px) {
+
+  .boxes_container .boxes_element {
+    min-height: 330px;
+  }
+}
+
+@media only screen and (max-width:1022px) {
+
+
+  .boxes_container .boxes_element h3 {
+    font-size: 18px;
+  }
+}
 
 @media only screen and (max-width:1000px) {
   .desk-menu {
@@ -1050,7 +1203,7 @@ input:focus {
     font-size: 30px;
   }
 
-  .main-cont h1::before { 
+  .main-cont h1::before {
     width: 35%;
     right: 0;
     left: 0;
@@ -1485,6 +1638,14 @@ a img.aligncenter {
     font-size: 30px;
   }
 
+  .main-cont-capter h1 {
+    font-size: 30px;
+  }
+
+  .main-cont-council h1 {
+    font-size: 30px;
+  }
+
   .row-gap {
     row-gap: 2em;
   }
@@ -1525,6 +1686,14 @@ a img.aligncenter {
   .main-cont h1,
   .head-val h2,
   .main-cont-member h1 {
+    font-size: 25px;
+  }
+
+  .main-cont-capter h1 {
+    font-size: 25px;
+  }
+
+  .main-cont-council h1 {
     font-size: 25px;
   }
 
@@ -1895,15 +2064,18 @@ a img.aligncenter {
   .count-up h3 {
     font-size: 14px !important;
   }
-  .membership-img-odd:after{
+
+  .membership-img-odd:after {
     left: 4px;
     top: 4px;
   }
-  .membership-img:after { 
+
+  .membership-img:after {
     right: 4px;
     top: 4px;
   }
-  .head::before { 
+
+  .head::before {
     top: 34%;
   }
 }
@@ -1972,7 +2144,7 @@ a img.aligncenter {
   content: '';
   position: absolute;
   border-bottom: 3px solid #f6c768;
-  bottom: 0px; 
+  bottom: 0px;
   left: 0%;
   right: 0px;
   text-align: center;
