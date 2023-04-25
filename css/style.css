@@ -342,7 +342,7 @@ input:focus {
   border-bottom: 3px solid #f6c768;
   bottom: 0px;
   text-align: center;
-  width: 30%;
+  width: 55%;
   border-radius: 50px;
   left: 0%;
   right: 0px;
@@ -1032,7 +1032,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 0px;
 }
 .boxes_container .secretariat-items img{
   width:70%;
@@ -1045,6 +1045,19 @@ input:focus {
   font-family: "Montserrat-Medium";
   font-weight: 600;
   text-transform: uppercase;
+  padding-top:25px;
+}
+.boxes_container .secretariat-items p {
+  color: #ebc848;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Montserrat-Regular";
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.boxes_container .secretariat-items a{
+  font-size: 16px;
+  color: #ebc848;
 }
 /*------------------------------------*\
             Clubs - PAGES
