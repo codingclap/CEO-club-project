@@ -1013,6 +1013,39 @@ input:focus {
   border-bottom: 2px solid #f6c768;
   padding-bottom: 6px;
 }
+
+
+.boxes_container .secretariat-height {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 20px;
+  padding: 20px 10px 20px 10px;
+  position: relative;
+  background-color: #0e0f3f;
+}
+
+.boxes_container .secretariat-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.boxes_container .secretariat-items img{
+  width:70%;
+}
+
+.boxes_container .secretariat-items h3 {
+  color: #ebc848;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Montserrat-Medium";
+  font-weight: 600;
+  text-transform: uppercase;
+}
 /*------------------------------------*\
             Clubs - PAGES
 \*------------------------------------*/
