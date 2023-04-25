@@ -228,8 +228,8 @@
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-secretariat-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-secretariat" type="button" role="tab" aria-controls="pills-secretariat"
-                            aria-selected="false">Secretariat</button>
+                            data-bs-target="#pills-secretariat" type="button" role="tab"
+                            aria-controls="pills-secretariat" aria-selected="false">Secretariat</button>
                     </li>
                 </ul>
             </div>
@@ -340,50 +340,224 @@
                         </div>
                     </div>
 
+
+                    <style>
+                        #venus-retry p {
+                            animation: slideHorizontally 0.5s ease-in-out 0ms infinite forwards alternate;
+                        }
+
+                        #venus-retry p {
+                            cursor: pointer;
+                            color: #ebc848;
+                            font-size: 24px;
+                            text-align: center;
+                            font-family: "Montserrat-Bold";
+                        }
+
+                        #venus-left-arrow {
+                            font-size: 1.5em;
+                            font-weight: bold;
+                        }
+
+                        @keyframes slideHorizontally {
+                            0% {
+                                transform: translateX(0px);
+                            }
+
+                            100% {
+                                transform: translateX(-10px);
+                            }
+                        }
+
+                        #back-button {
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            padding-top: 5em;
+                        }
+                    </style>
                     <!----- Chapter Councils --->
                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                         <div class="container-fluid py-5 text-center text-white">
                             <div class="main-cont-capter mt-3 pb-5">
-                                <h1 class="pb-3 mt-0">Chapters</h1>
+                                <h1 class="pb-3 mt-0" id="chapter_name">Chapters</h1>
                                 <!-- <p class="mt-5 pt-3 "> TExt</p> -->
                             </div>
                         </div>
-                        <div class="boxes_container">
+                        <div class="boxes_container" id="city_container">
                             <div class="chapter-height">
-                                <a href="" class="chapter-items">
+                                <a href="javscript:void(0)" onclick="hide_show_pages('Ahmedabad')"
+                                    class="chapter-items">
                                     <img src="img/club-pic/ahmedabad.svg" alt="" width="100%">
                                     <h3>Ahmedabad</h3>
                                 </a>
                             </div>
                             <div class="chapter-height">
-                                <a href="" class="chapter-items">
+                                <a href="javscript:void(0)" onclick="hide_show_pages('Hyderabad')"
+                                    class="chapter-items">
                                     <img src="img/club-pic/hyderabad.svg" alt="" width="100%">
                                     <h3>Hyderabad</h3>
                                 </a>
                             </div>
                             <div class="chapter-height">
-                                <a href="" class="chapter-items">
+                                <a href="javscript:void(0)" onclick="hide_show_pages('Bangalore')"
+                                    class="chapter-items">
                                     <img src="img/club-pic/bangalore.svg" alt="" width="100%">
                                     <h3>Bangalore</h3>
                                 </a>
                             </div>
                             <div class="chapter-height">
-                                <a href="" class="chapter-items">
+                                <a href="javscript:void(0)" onclick="hide_show_pages('Delhi')" class="chapter-items">
                                     <img src="img/club-pic/delhi.svg" alt="" width="100%">
                                     <h3>Delhi</h3>
                                 </a>
                             </div>
                             <div class="chapter-height">
-                                <a href="" class="chapter-items">
+                                <a href="javscript:void(0)" onclick="hide_show_pages('Pune')" class="chapter-items">
                                     <img src="img/club-pic/pune.svg" alt="" width="100%">
                                     <h3>Pune</h3>
                                 </a>
                             </div>
                         </div>
+
+
+                        <!---- Chapter Nested Pages ----->
+
+                        <!---Ahmedabad nested-->
+                        <div class="boxes_container hide" id="Ahmedabad-nested" style="display:none;">
+                            <div class="boxes_element">
+                                <img src="img/club-pic/suresh.png" alt="">
+                                <h3>Suresh Challa </h3>
+                                <p>Finance Chair </p>
+                            </div>
+                            <div class="boxes_element">
+                                <img src="img/club-pic/rvs_ramakrishna.png" alt="">
+                                <h3>RVS Ramakrishna </h3>
+                                <p>Communication Chair</p>
+                            </div>
+                        </div>
+
+                        <!------Hyderabad nested-->
+                        <div class="boxes_container hide" id="Hyderabad-nested" style="display:none;">
+                            <div class="boxes_element">
+                                <img src="img/club-pic/kishore.png" alt="">
+                                <h3>Kishore Kothapalli </h3>
+                                <p>President</p>
+                            </div>
+
+                            <div class="boxes_element">
+                                <img src="img/club-pic/hemant.png" alt="">
+                                <h3>Hemant Sapra </h3>
+                                <p>Chair GBR 24 </p>
+                            </div>
+                        </div>
+
+                        <!------Bangalore nested-->
+                        <div class="boxes_container hide" id="Bangalore-nested" style="display:none;">
+                            <div class="boxes_element">
+                                <img src="img/club-pic/krishna.png" alt="">
+                                <h3>Krishna Prasad Chigurupati</h3>
+                                <p>Vice-President</p>
+                            </div>
+                            <div class="boxes_element">
+                                <img src="img/club-pic/jairaj.png" alt="">
+                                <h3>Jairaj Kumar </h3>
+                                <p>Chief Mentor</p>
+                            </div>
+                            <div class="boxes_element">
+                                <img src="img/club-pic/kapil.png" alt="">
+                                <h3>Kapil Mehan </h3>
+                                <p>Events Chair</p>
+                            </div>
+                        </div>
+
+                        <!------Delhi nested-->
+                        <div class="boxes_container hide" id="Delhi-nested" style="display:none;">
+                            <div class="boxes_element">
+                                <img src="img/club-pic/jairaj.png" alt="">
+                                <h3>Jairaj Kumar </h3>
+                                <p>Chief Mentor</p>
+                            </div>
+                            <div class="boxes_element">
+                                <img src="img/club-pic/kapil.png" alt="">
+                                <h3>Kapil Mehan </h3>
+                                <p>Events Chair</p>
+                            </div>
+                            <div class="boxes_element">
+                                <img src="img/club-pic/kishore.png" alt="">
+                                <h3>Kishore Kothapalli </h3>
+                                <p>President</p>
+                            </div>
+                        </div>
+
+                        <!------Pune nested-->
+                        <div class="boxes_container hide" id="Pune-nested" style="display:none;">
+                            <div class="boxes_element">
+                                <img src="img/club-pic/kapil.png" alt="">
+                                <h3>Kapil Mehan </h3>
+                                <p>Events Chair</p>
+                            </div>
+                            <div class="boxes_element">
+                                <img src="img/club-pic/kishore.png" alt="">
+                                <h3>Kishore Kothapalli </h3>
+                                <p>President</p>
+                            </div>
+                            <div class="boxes_element">
+                                <img src="img/club-pic/kishore.png" alt="">
+                                <h3>Kishore Kothapalli </h3>
+                                <p>President</p>
+                            </div>
+
+                        </div>
+                        <div id="back-button" style="display:none;">
+                            <div id="venus-retry" onclick="back_to_content('chapter_name')">
+                                <p><span id="venus-left-arrow"></span>
+                                    &lt;&lt; Back</p>
+                            </div>
+                        </div>
+                        <!---- Chapter Nested Pages ----->
+
+                        <script>
+                            function hide_show_pages(name) {
+                                //alert(name);
+                                var main_head = document.querySelector('#chapter_name');
+                                var show_target = document.querySelector('#' + name + '-nested');
+                                var show_button = document.querySelector('#back-button');
+                                main_head.innerHTML = name;
+                                var hideclass = document.querySelectorAll('.hide');
+
+                                for (var i = 0; i < hideclass.length; i++) {
+                                    console.log(document.getElementsByClassName('hide')[i]);
+                                    document.getElementsByClassName('hide')[i].style = 'display:none';
+
+                                }
+                                show_target.style = "display:flex";
+                                show_button.style = "display:flex;";
+                                document.querySelector('#city_container').style = "display:none";
+
+
+                                console.log(show_target.getAttribute);
+                            }
+
+                            function back_to_content(chapter) {
+                                var hideclass = document.querySelectorAll('.hide');
+                                var main_head = document.querySelector('#chapter_name');
+                                var show_button = document.querySelector('#back-button');
+                                show_button.style = "display:none;";
+                                for (var i = 0; i < hideclass.length; i++) {
+                                    console.log(document.getElementsByClassName('hide')[i]);
+                                    document.getElementsByClassName('hide')[i].style = 'display:none';
+
+                                }
+                                document.querySelector('#city_container').style = "display:flex";
+                                main_head.innerHTML = "Chapters";
+                            }
+                        </script>
                     </div>
 
                     <!----- Secretariat --->
-                    <div class="tab-pane fade" id="pills-secretariat" role="tabpanel" aria-labelledby="pills-secretariat-tab">
+                    <div class="tab-pane fade" id="pills-secretariat" role="tabpanel"
+                        aria-labelledby="pills-secretariat-tab">
                         <div class="container-fluid py-5 text-center text-white">
                             <div class="main-cont-capter mt-3 pb-5">
                                 <h1 class="pb-3 mt-0">Secretariat</h1>
@@ -395,38 +569,38 @@
                                 <div class="secretariat-items">
                                     <img src="img/club-pic/suraj-sharma.png" alt="">
                                     <h3>Suraj Sharma</h3>
-                                    <p>(National)</p> 
+                                    <p>(National)</p>
                                 </div>
                             </div>
                             <div class="secretariat-height">
                                 <div class="secretariat-items">
                                     <img src="img/club-pic/swathy-nair.png" alt="">
                                     <h3>Swathy S Nair</h3>
-                                    <p>(Bangalore, Pune, Ahmedabad)</p> 
+                                    <p>(Bangalore, Pune, Ahmedabad)</p>
                                 </div>
                             </div>
                             <div class="secretariat-height">
                                 <div class="secretariat-items">
                                     <img src="img/club-pic/simran-s.png" alt="">
                                     <h3>Simran S</h3>
-                                    <p>(Hyderabad)</p> 
+                                    <p>(Hyderabad)</p>
                                 </div>
                             </div>
                             <div class="secretariat-height">
                                 <div class="secretariat-items">
                                     <img src="img/club-pic/yashasree.png" alt="">
                                     <h3>Yashasree M</h3>
-                                    <p>(Hyderabad)</p> 
+                                    <p>(Hyderabad)</p>
                                 </div>
                             </div>
                             <div class="secretariat-height">
                                 <div class="secretariat-items">
                                     <img src="img/club-pic/anu-puri.png" alt="">
                                     <h3>Anu Puri</h3>
-                                    <p>(Delhi)</p> 
+                                    <p>(Delhi)</p>
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
