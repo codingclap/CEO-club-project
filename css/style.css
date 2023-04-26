@@ -1124,9 +1124,16 @@ input:focus {
   .boxes_container .boxes_element h3 {
     font-size: 20px;
   }
-
+   
   .boxes_container .boxes_element {
-    min-height: 380px;
+    min-height: 395px;
+    max-width: 280px;
+  }
+  .boxes_container .chapter-height{
+    max-width: 280px;
+  }
+  .boxes_container .secretariat-height{
+    max-width: 285px;
   }
 
   .sin-up {
@@ -1214,7 +1221,7 @@ input:focus {
 @media only screen and (max-width:1150px) {
 
   .boxes_container .boxes_element {
-    min-height: 330px;
+    min-height: 366px;
   }
 }
 
