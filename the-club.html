@@ -380,15 +380,21 @@
                             justify-content: center;
                             align-items: center;
                             width: 100%;
-                            padding-top: 5em;
+                            padding-bottom: 2em;
                         }
                     </style>
                     <!----- Chapter Councils --->
                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                        <div class="container-fluid py-5 text-center text-white">
+                        <div class="container-fluid pt-5 text-center text-white">
                             <div class="main-cont-capter mt-3 pb-5">
                                 <h1 class="pb-3 mt-0" id="chapter_name">Chapters</h1>
                                 <!-- <p class="mt-5 pt-3 "> TExt</p> -->
+                            </div>
+                        </div>
+                        <div id="back-button" style="display:none;">
+                            <div id="venus-retry" onclick="back_to_content('chapter_name')">
+                                <p><span id="venus-left-arrow"></span>
+                                    &lt;&lt; Back</p>
                             </div>
                         </div>
                         <div class="boxes_container" id="city_container">
@@ -427,7 +433,7 @@
                             </div>
                         </div>
 
-
+                        
                         <!---- Chapter Nested Pages ----->
 
                         <!---Ahmedabad nested-->
@@ -645,12 +651,7 @@
                            
 
                         </div>
-                        <div id="back-button" style="display:none;">
-                            <div id="venus-retry" onclick="back_to_content('chapter_name')">
-                                <p><span id="venus-left-arrow"></span>
-                                    &lt;&lt; Back</p>
-                            </div>
-                        </div>
+                        
                         <!---- Chapter Nested Pages ----->
 
                         <script>

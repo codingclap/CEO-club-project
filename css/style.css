@@ -981,7 +981,7 @@ input:focus {
 }
 
 .boxes_container .chapter-height {
-  min-height: 220px;
+  min-height: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
