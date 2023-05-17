@@ -174,12 +174,16 @@ jQuery(document).ready(function (jQuery) {
     }]
   });
 
+/*  Event Slider ****/
 
+jQuery('.ct-box-slider').slick({
+  autoplay: true,
+  autoplaySpeed: 4000,
+  arrows: true,
+  dots: true,
+});
 
-
-
-
-
+ 
 
 
 });
