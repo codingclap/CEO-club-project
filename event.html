@@ -215,10 +215,36 @@
                 font-size: 13px;
             }
         }
+
+        .main-event h1::before {
+            content: '';
+            position: absolute;
+            border-bottom: 3px solid #f6c768;
+            bottom: 0px;
+            text-align: center;
+            width: 30%;
+            border-radius: 50px;
+            left: 0%;
+            right: 0px;
+            margin: 0 auto;
+        }
+
+        .main-event h1 {
+            font-family: "Montserrat-Bold";
+            font-size: 40px;
+            color: #f6c768;
+            position: relative;
+        }
+
+        @media (max-width: 767px) {
+            .main-event h1 {
+                font-size: 30px;
+            }
+        }
     </style>
     <div class="container">
         <div class="container py-5 text-center text-white">
-            <div class="main-cont-member mt-3 pb-5">
+            <div class="main-event mt-3 pb-5">
                 <h1 class="pb-3 mt-0">Events Gallery</h1>
                 <!-- <p class="mt-5 pt-3 "> TExt</p> -->
             </div>
@@ -264,83 +290,157 @@
     <!--- Events Gallery -->
 
     <style>
- .custom-container{
-    width:100%;
-    max-width: 1300px;
-    margin: 0 auto;
- }
-.ct-box-slider__arrows .slick-arrow{
-	padding: 0 1px 0 0;
-	opacity: 0.3;
-}
-.ct-box-slider__arrows .slick-arrow:hover{
-	opacity: 0.5;
-}
-.ct-box-slider__arrows .slick-arrow:hover:active{
-	opacity: 0.55;
-}
-.ct-box{
-	font-family: 'stenciletta-solid', sans-serif;
-	font-size: 23px;
-	line-height: 1.15;
-	padding: 15px 0;
-	display: block;
-	color: #000;
-}
-.ct-box .hover{
-	display: none;
-}
-.ct-box span{
-	padding-top: 15px;
-	display: block;
-	max-width: 100%;
-}
-.ct-box .inner{
-	background: #f6f4f4;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	text-align: center;
-	padding: 15px 25px;
-	height: 200px;
-  cursor: pointer;
-}
-.ct-box .inner .fa {
-  font-size: 64px;
-}
-.ct-box:hover{
-	color: #00719b;
-}
-.ct-box:hover .normal{
-	display: none;
-}
-.ct-box:hover .hover{
-	display: block;
-}
-@media (max-width: 479px){
-	.ct-box{
-		font-size: 18px;
-	}
-	.ct-box img{
-		max-width: 50%;
-	}
-	.ct-box .inner{
-		height: 150px;
-		padding: 10px;
-	}
-}
+        .custom-container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 4rem 0 2rem 0;
+            gap: 0.6em;
+            list-style-type: none;
+        }
+
+        .slick-dots li {
+            margin: 0 0.25rem;
+        }
+
+        .slick-dots button {
+            display: block;
+            width: 1.4rem;
+            height: 1.4rem;
+            padding: 0;
+            border: none;
+            border-radius: 100%;
+            background-color: #fff;
+            text-indent: -9999px;
+        }
+
+        li.slick-active button {
+            background-color: #e6c348;
+        }
+
+        .event-nav.prev-arrow {
+            position: absolute;
+            left: 42%;
+            top: 34px;
+            cursor: pointer;
+        }
+
+        .event-nav.next-arrow {
+            position: absolute;
+            right: 42%;
+            top: 34px;
+            cursor: pointer;
+        }
+
+        .event-box-slider__arrows .slick-arrow {
+            padding: 0 1px 0 0;
+            opacity: 0.3;
+        }
+
+        .event-box-slider__arrows .slick-arrow:hover {
+            opacity: 0.5;
+        }
+
+        .event-box-slider__arrows .slick-arrow:hover:active {
+            opacity: 0.55;
+        }
+
+        .event-box {
+            font-family: 'stenciletta-solid', sans-serif;
+            font-size: 23px;
+            line-height: 1.15;
+            padding: 15px 0;
+            display: block;
+            color: #000;
+        }
+
+        .event-box .hover {
+            display: none;
+        }
+
+        .event-box span {
+            padding-top: 15px;
+            display: block;
+            max-width: 100%;
+        }
+
+        .event-box .inner {
+            width: 100%;
+            background: #f6f4f4;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            text-align: center;
+            height: 300px;
+            position: relative;
+        }
+
+        .event-box .event-img {
+            position: relative;
+        }
+
+        .event-box .event-overlay {
+            position: absolute;
+            min-height: 110px;
+            width: 100%;
+            background-color: #0e0f3fb3;
+            bottom: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .event-box .event-overlay h3 {
+            color: #fff;
+            font-family: "Montserrat-Bold";
+            font-size: 20px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .event-box .event-overlay p {
+            color: #fff;
+            font-family: "Montserrat-Medium";
+            font-size: 17px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+
+        @media (max-width: 479px) {
+            .event-box {
+                font-size: 18px;
+            }
+
+            .event-box img {
+                max-width: 50%;
+            }
+
+            .event-box .inner {
+                height: 150px;
+                padding: 10px;
+            }
+        }
     </style>
-    <div class="custom-container my-0 my-sm-1 my-md-3 my-lg-3 py-0 py-sm-1 py-md-3 py-lg-3  overflow-hidden">
+    <div class="container my-0 my-sm-1 my-md-3 my-lg-3 py-0 py-sm-1 py-md-3 py-lg-3  overflow-hidden">
         <!-- Tabs Content Area -->
         <div class="row gx-5 row-gap">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -351,85 +451,119 @@
                     <!----- Board Memeber --->
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                         aria-labelledby="pills-home-tab">
-                        
-                          <div class="ct-box-slider ct-js-box-slider">
-                              
+
+                        <div class="event-box-slider ct-js-box-slider">
                             <div class="item">
-                              <div class="container-fluid">
-                              <div class="row">
-                                <div class="col-xs-6 col-sm-4">
-                                  <div onclick="location.href='#'" class="ct-box">
-                                    <div class="inner" role="presentation"><i class="fa fa-calendar"></i><span>View Upcoming Events</span></div>
-                                  </div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-6 col-md-4 px-0 px-sm-0 px-md-4 px-lg-4" >
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation" style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
+                                                    <div class="event-img">
+                                                        <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp"
+                                                            alt="Womens-Day-Celebration" width="100%">
+ 
+                                                    </div>
+                                                    <div class="event-overlay">
+                                                        <h3>Women's Day Celebration</h3>
+                                                        <p>27 MARCH, 2023</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4  px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-xs-6 col-sm-4">
-                                  <div onclick="location.href='#'" class="ct-box">
-                                    <div class="inner" role="presentation"><i class="fa fa-users"></i><span>Connect with Others</span></div>
-                                  </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-4">
-                                  <div onclick="location.href='#'" class="ct-box">
-                                    <div class="inner" role="presentation"><i class="fa fa-ticket"></i><span>Purchase Tickets</span></div>
-                                  </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-4">
-                                  <div onclick="location.href='#'" class="ct-box">
-                                    <div class="inner" role="presentation"><i class="fa fa-plane"></i><span>Book a Flight</span></div>
-                                  </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-4">
-                                  <div onclick="location.href='#'" class="ct-box">
-                                    <div class="inner" role="presentation"><i class="fa fa-cutlery"></i><span>Dining Reservations</span></div>
-                                  </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-4">
-                                  <div onclick="location.href='#'" class="ct-box">
-                                    <div class="inner" role="presentation"><i class="fa fa-ship"></i><span>Book a Cruise</span></div>
-                                  </div>
-                                </div>
-                              </div>
-                              </div>
                             </div>
-                            
+
                             <div class="item">
-                              <div class="container-fluid">
-                              <div class="row">
-                                <div class="col-xs-6 col-sm-4">
-                                  <div onclick="location.href='#'" class="ct-box">
-                                    <div class="inner" role="presentation"><i class="fa fa-graduation-cap"></i><span>Find Tutorials</span></div>
-                                  </div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <div class="col-xs-6 col-sm-4">
-                                  <div onclick="location.href='#'" class="ct-box">
-                                    <div class="inner" role="presentation"><i class="fa fa-free-code-camp"></i><span>Enroll in Code Camp</span></div>
-                                  </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-4">
-                                  <div onclick="location.href='#'" class="ct-box">
-                                    <div class="inner" role="presentation"><i class="fa fa-file-code-o"></i><span>Source Code Descriptions</span></div>
-                                  </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-4">
-                                  <div onclick="location.href='#'" class="ct-box">
-                                    <div class="inner" role="presentation"><i class="fa fa-bar-chart"></i><span>Learn About Analytics</span></div>
-                                  </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-4">
-                                  <div onclick="location.href='#'" class="ct-box">
-                                    <div class="inner" role="presentation"><i class="fa fa-universal-access"></i><span>Learn About Accessibility</span></div>
-                                  </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-4">
-                                  <div onclick="location.href='#'" class="ct-box">
-                                    <div class="inner" role="presentation"><i class="fa fa-wpforms"></i><span>Contact Webmaster</span></div>
-                                  </div>
-                                </div>
-                              </div>
-                              </div>
                             </div>
-                          </div>
-                          
-                         
+
+
+                        </div>
+
+
                     </div>
 
 
@@ -437,44 +571,44 @@
 
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                         <div class="boxes_container mt-5">
-                           
-                                <div class="boxes_element">
-                                    <img src="img/club-pic/jairaj-kumar.png" alt="">
-                                    <h3>Jairaj Kumar </h3>
-                                    <p>Chief Mentor</p>
-                                </div>
-                                <div class="boxes_element">
-                                    <img src="img/club-pic/kishore-othapalli.png" alt="">
-                                    <h3>Kishore Kothapalli </h3>
-                                    <p>President</p>
-                                </div>
-                                <div class="boxes_element">
-                                    <img src="img/club-pic/krishna-prasad-chigurupati.png" alt="">
-                                    <h3>Krishna Prasad Chigurupati</h3>
-                                    <p>Vice-President</p>
-                                </div>
 
-                                <div class="boxes_element">
-                                    <img src="img/club-pic/kapil-mehan.png" alt="">
-                                    <h3>Kapil Mehan </h3>
-                                    <p>Events Chair</p>
-                                </div>
-                                <div class="boxes_element">
-                                    <img src="img/club-pic/suresh-challa.png" alt="">
-                                    <h3>Suresh Challa </h3>
-                                    <p>Finance Chair </p>
-                                </div>
-                                <div class="boxes_element">
-                                    <img src="img/club-pic/rvs_ramakris.png" alt="">
-                                    <h3>RVS Ramakrishna </h3>
-                                    <p>Communication Chair</p>
-                                </div>
-                                <div class="boxes_element">
-                                    <img src="img/club-pic/hemant-sapra.png" alt="">
-                                    <h3>Hemant Sapra </h3>
-                                    <p>Chair GBR 24 </p>
-                                </div>
-                            
+                            <div class="boxes_element">
+                                <img src="img/club-pic/jairaj-kumar.png" alt="">
+                                <h3>Jairaj Kumar </h3>
+                                <p>Chief Mentor</p>
+                            </div>
+                            <div class="boxes_element">
+                                <img src="img/club-pic/kishore-othapalli.png" alt="">
+                                <h3>Kishore Kothapalli </h3>
+                                <p>President</p>
+                            </div>
+                            <div class="boxes_element">
+                                <img src="img/club-pic/krishna-prasad-chigurupati.png" alt="">
+                                <h3>Krishna Prasad Chigurupati</h3>
+                                <p>Vice-President</p>
+                            </div>
+
+                            <div class="boxes_element">
+                                <img src="img/club-pic/kapil-mehan.png" alt="">
+                                <h3>Kapil Mehan </h3>
+                                <p>Events Chair</p>
+                            </div>
+                            <div class="boxes_element">
+                                <img src="img/club-pic/suresh-challa.png" alt="">
+                                <h3>Suresh Challa </h3>
+                                <p>Finance Chair </p>
+                            </div>
+                            <div class="boxes_element">
+                                <img src="img/club-pic/rvs_ramakris.png" alt="">
+                                <h3>RVS Ramakrishna </h3>
+                                <p>Communication Chair</p>
+                            </div>
+                            <div class="boxes_element">
+                                <img src="img/club-pic/hemant-sapra.png" alt="">
+                                <h3>Hemant Sapra </h3>
+                                <p>Chair GBR 24 </p>
+                            </div>
+
                         </div>
                     </div>
 
@@ -660,10 +794,10 @@
     </div>
 
 
-    
-      <!-- Always keep all the scripts above body closing tag. -->
-      
-     
+
+    <!-- Always keep all the scripts above body closing tag. -->
+
+
     <!--- About Start -->
     <!-- End of Membership -->
     <!-----Border---->

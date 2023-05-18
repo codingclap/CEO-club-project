@@ -176,11 +176,15 @@ jQuery(document).ready(function (jQuery) {
 
 /*  Event Slider ****/
 
-jQuery('.ct-box-slider').slick({
+jQuery('.event-box-slider').slick({
   autoplay: true,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 400000,
   arrows: true,
   dots: true,
+  prevArrow: '<div class="position-relative"><div class="event-nav  prev-arrow"><img class="mt-2" src="https://ceoclubsindia.org/wp-content/uploads/2023/05/arrow-left.png"></div></div>',
+    nextArrow: '<div class="position-relative"><div class="event-nav next-arrow"><img class="mt-2" src="https://ceoclubsindia.org/wp-content/uploads/2023/05/arrow-right.png"></div></div>',
+  rows:3,
+  adaptiveHeight: true
 });
 
  
