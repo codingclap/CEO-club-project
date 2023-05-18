@@ -188,6 +188,88 @@
 
     <!--- Second Banner Start --->
 
+    <!--- upcomming-event -->
+    <style>
+        .upcomming-event h1::before {
+            content: '';
+            position: absolute;
+            border-bottom: 3px solid #f6c768;
+            bottom: 0px;
+            text-align: center;
+            width: 30%;
+            border-radius: 50px;
+            left: 0%;
+            right: 0px;
+            margin: 0 auto;
+        }
+
+        .upcomming-event h1 {
+            font-family: "Montserrat-Bold";
+            font-size: 40px;
+            color: #f6c768;
+            position: relative;
+        }
+
+        @media (max-width: 767px) {
+            .upcomming-event h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+    <div class="container">
+        <div class="container py-5 text-center text-white">
+            <div class="upcomming-event mt-3 pb-5">
+                <h1 class="pb-3 mt-0">Upcoming Events</h1>
+                <!-- <p class="mt-5 pt-3 "> TExt</p> -->
+            </div>
+        </div>
+
+        <div class="upcomming-box-slider ct-js-box-slider">
+            <div class="item">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                            <div class="event-box">
+                                <div class="inner" role="presentation"
+                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
+
+                                    <div class="event-overlay">
+                                        <h3>Women's Day Celebration</h3>
+                                        <p>27 MARCH, 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <!-- <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4" >
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation" style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
+                                                    
+                                                    <div class="event-overlay">
+                                                        <h3>Women's Day Celebration</h3>
+                                                        <p>27 MARCH, 2023</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!------ upcomming-event ------>
+
 
     <!--- Events Gallery -->
     <style>
@@ -397,7 +479,7 @@
 
         .event-box .event-overlay {
             position: absolute;
-            min-height: 110px;
+            min-height: 80px;
             width: 100%;
             background-color: #0e0f3fb3;
             bottom: 0px;
@@ -424,6 +506,33 @@
             margin: 0px;
         }
 
+        @media (max-width:1300px) {
+            .event-box .event-overlay h3 {
+                font-size: 18px;
+            }
+
+            .event-box .event-overlay p {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width:768px) {
+            .event-box .event-overlay h3 {
+                font-size: 16px;
+            }
+
+            .event-box .event-overlay p {
+                font-size: 13px;
+            }
+
+            .event-nav.next-arrow {
+                right: 30%;
+            }
+
+            .event-nav.prev-arrow {
+                left: 30%;
+            }
+        }
 
         @media (max-width: 479px) {
             .event-box {
@@ -456,14 +565,11 @@
                             <div class="item">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-xs-6 col-sm-6 col-md-4 px-0 px-sm-0 px-md-4 px-lg-4" >
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
                                             <div class="event-box">
-                                                <div class="inner" role="presentation" style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
-                                                    <div class="event-img">
-                                                        <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp"
-                                                            alt="Womens-Day-Celebration" width="100%">
- 
-                                                    </div>
+                                                <div class="inner" role="presentation"
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
+
                                                     <div class="event-overlay">
                                                         <h3>Women's Day Celebration</h3>
                                                         <p>27 MARCH, 2023</p>
@@ -471,59 +577,63 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-6 col-sm-4  px-0 px-sm-0 px-md-4 px-lg-4">
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
                                             <div class="event-box">
-                                                <div class="inner" role="presentation">
+                                                <div class="inner" role="presentation"
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
 
+                                                    <div class="event-overlay">
+                                                        <h3>Women's Day Celebration</h3>
+                                                        <p>27 MARCH, 2023</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
                                             <div class="event-box">
-                                                <div class="inner" role="presentation">
+                                                <div class="inner" role="presentation"
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
 
+                                                    <div class="event-overlay">
+                                                        <h3>Women's Day Celebration</h3>
+                                                        <p>27 MARCH, 2023</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
                                             <div class="event-box">
-                                                <div class="inner" role="presentation">
+                                                <div class="inner" role="presentation"
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
 
+                                                    <div class="event-overlay">
+                                                        <h3>Women's Day Celebration</h3>
+                                                        <p>27 MARCH, 2023</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
                                             <div class="event-box">
-                                                <div class="inner" role="presentation">
+                                                <div class="inner" role="presentation"
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
 
+                                                    <div class="event-overlay">
+                                                        <h3>Women's Day Celebration</h3>
+                                                        <p>27 MARCH, 2023</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
                                             <div class="event-box">
-                                                <div class="inner" role="presentation">
+                                                <div class="inner" role="presentation"
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
 
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
-                                            <div class="event-box">
-                                                <div class="inner" role="presentation">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
-                                            <div class="event-box">
-                                                <div class="inner" role="presentation">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
-                                            <div class="event-box">
-                                                <div class="inner" role="presentation">
-
+                                                    <div class="event-overlay">
+                                                        <h3>Women's Day Celebration</h3>
+                                                        <p>27 MARCH, 2023</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -534,27 +644,18 @@
                             <div class="item">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
-                                            <div class="event-box">
-                                                <div class="inner" role="presentation">
 
+                                        <!-- <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4" >
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation" style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
+                                                    
+                                                    <div class="event-overlay">
+                                                        <h3>Women's Day Celebration</h3>
+                                                        <p>27 MARCH, 2023</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
-                                            <div class="event-box">
-                                                <div class="inner" role="presentation">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 px-0 px-sm-0 px-md-4 px-lg-4">
-                                            <div class="event-box">
-                                                <div class="inner" role="presentation">
-
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </div> -->
 
                                     </div>
                                 </div>

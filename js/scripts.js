@@ -187,6 +187,16 @@ jQuery('.event-box-slider').slick({
   adaptiveHeight: true
 });
 
+jQuery('.upcomming-box-slider').slick({
+  autoplay: true,
+  autoplaySpeed: 400000,
+  arrows: true,
+  dots: true,
+  prevArrow: '<div class="position-relative"><div class="event-nav  prev-arrow"><img class="mt-2" src="https://ceoclubsindia.org/wp-content/uploads/2023/05/arrow-left.png"></div></div>',
+    nextArrow: '<div class="position-relative"><div class="event-nav next-arrow"><img class="mt-2" src="https://ceoclubsindia.org/wp-content/uploads/2023/05/arrow-right.png"></div></div>',
+  rows:3,
+  adaptiveHeight: true
+});
  
 
 
