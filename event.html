@@ -216,146 +216,72 @@
             }
         }
 
-        .event-nav.prev-arrow {
+        .upcomming-nav.prev-arrow {
             position: absolute;
             left: 42%;
             top: 34px;
             cursor: pointer;
         }
 
-        .event-nav.next-arrow {
+        .upcomming-nav.next-arrow {
             position: absolute;
             right: 42%;
             top: 34px;
             cursor: pointer;
         }
 
-        .event-box-slider__arrows .slick-arrow {
+        .upcomming-box-slider__arrows .slick-arrow {
             padding: 0 1px 0 0;
             opacity: 0.3;
         }
 
-        .event-box-slider__arrows .slick-arrow:hover {
+        .upcomming-box-slider__arrows .slick-arrow:hover {
             opacity: 0.5;
         }
 
-        .event-box-slider__arrows .slick-arrow:hover:active {
+        .upcomming-box-slider__arrows .slick-arrow:hover:active {
             opacity: 0.55;
         }
 
-        .event-box {
-            font-family: 'stenciletta-solid', sans-serif;
-            font-size: 23px;
-            line-height: 1.15;
-            padding: 15px 0;
-            display: block;
-            color: #000;
+        .upcomming-box-slider .card {
+            border-radius: 15px;
+            border: 2.5px solid #e3bb2f;
+            background-color: #0e0f3f;
         }
 
-        .event-box .hover {
-            display: none;
-        }
-
-        .event-box span {
-            padding-top: 15px;
-            display: block;
-            max-width: 100%;
-        }
-
-        .event-box .inner {
-            width: 100%;
-            background: #f6f4f4;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            text-align: center;
-            height: 300px;
-            position: relative;
-        }
-
-        .event-box .event-img {
-            position: relative;
-        }
-
-        .event-box .event-overlay {
-            position: absolute;
-            min-height: 80px;
-            width: 100%;
-            background-color: #0e0f3fb3;
-            bottom: 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 6px;
-        }
-
-        .event-box .event-overlay h3 {
-            color: #fff;
+        .upcomming-box-slider h3 {
+            color: #e3bb2f;
             font-family: "Montserrat-Bold";
-            font-size: 20px;
+            font-size: 22px;
             padding: 0px;
             margin: 0px;
+            line-height: 1.3em;
         }
 
-        .event-box .event-overlay p {
+        .upcomming-box-slider p {
             color: #fff;
             font-family: "Montserrat-Medium";
-            font-size: 17px;
+            font-size: 18px;
             padding: 0px;
             margin: 0px;
         }
 
-        @media (max-width:1300px) {
-            .event-box .event-overlay h3 {
-                font-size: 18px;
+        @media(max-width:768px) {
+            .upcomming-box-slider h3 {
+                color: #e3bb2f;
+                font-family: "Montserrat-Bold";
+                font-size: 20px;
+                padding: 0px;
+                margin: 0px;
+                line-height: 1.3em;
             }
 
-            .event-box .event-overlay p {
-                font-size: 15px;
-            }
-        }
-
-        @media (max-width:768px) {
-            .event-box .event-overlay h3 {
+            .upcomming-box-slider p {
+                color: #fff;
+                font-family: "Montserrat-Medium";
                 font-size: 16px;
-            }
-
-            .event-box .event-overlay p {
-                font-size: 13px;
-            }
-
-            .event-nav.next-arrow {
-                right: 30%;
-            }
-
-            .event-nav.prev-arrow {
-                left: 30%;
-            }
-        }
-
-        @media (max-width: 479px) {
-            .event-box {
-                font-size: 18px;
-            }
-
-            .event-box img {
-                max-width: 50%;
-            }
-
-            .event-box .inner {
-                height: 150px;
-                padding: 10px;
+                padding: 0px;
+                margin: 0px;
             }
         }
     </style>
@@ -371,20 +297,84 @@
             <div class="item">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
-                            <div class="upcomming-box">
-                                <div class="inner" role="presentation"
-                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
-
-                                    <div class="upcomming-overlay">
-                                        <h3>Women's Day Celebration</h3>
-                                        <p>27 MARCH, 2023</p>
-                                    </div>
+                        <!--ADD CLASSES HERE d-flex align-items-stretch-->
+                        <div class="col-lg-4 mb-3 d-flex align-items-stretch py-0 py-sm-0 py-md-4 py-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                            <div class="card">
+                                <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/upcomming-1.webp"
+                                    class="card-img-top" alt="Card Image">
+                                <div
+                                    class="card-body d-flex flex-column justify-content-center align-items-center px-3 px-lg-5">
+                                    <p class="card-title pt-4">27 APR- 4 MAY</p>
+                                    <h3 class="card-text mb-4 pt-2 text-center">Retreat to Mexico & Business Trip To USA
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 d-flex align-items-stretch py-0 py-sm-0 py-md-4 py-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                            <div class="card">
+                                <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/upcomming-1.webp"
+                                    class="card-img-top" alt="Card Image">
+                                <div
+                                    class="card-body d-flex flex-column justify-content-center align-items-center px-3 px-lg-5">
+                                    <p class="card-title pt-4">27 APR- 4 MAY</p>
+                                    <h3 class="card-text mb-4 pt-2 text-center">Retreat to Mexico & Business Trip To USA
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 d-flex align-items-stretch py-0 py-sm-0 py-md-4 py-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                            <div class="card">
+                                <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/upcomming-1.webp"
+                                    class="card-img-top" alt="Card Image">
+                                <div
+                                    class="card-body d-flex flex-column justify-content-center align-items-center px-3 px-lg-5">
+                                    <p class="card-title pt-4">27 APR- 4 MAY</p>
+                                    <h3 class="card-text mb-4 pt-2 text-center">Retreat to Mexico & Business Trip To USA
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 d-flex align-items-stretch py-0 py-sm-0 py-md-4 py-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                            <div class="card">
+                                <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/upcomming-1.webp"
+                                    class="card-img-top" alt="Card Image">
+                                <div
+                                    class="card-body d-flex flex-column justify-content-center align-items-center px-3 px-lg-5">
+                                    <p class="card-title pt-4">27 APR- 4 MAY</p>
+                                    <h3 class="card-text mb-4 pt-2 text-center">Retreat to Mexico & Business Trip To USA
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 d-flex align-items-stretch py-0 py-sm-0 py-md-4 py-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                            <div class="card">
+                                <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/upcomming-1.webp"
+                                    class="card-img-top" alt="Card Image">
+                                <div
+                                    class="card-body d-flex flex-column justify-content-center align-items-center px-3 px-lg-5">
+                                    <p class="card-title pt-4">27 APR- 4 MAY</p>
+                                    <h3 class="card-text mb-4 pt-2 text-center">Retreat to Mexico & Business Trip To USA
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3 d-flex align-items-stretch py-0 py-sm-0 py-md-4 py-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                            <div class="card">
+                                <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/upcomming-1.webp"
+                                    class="card-img-top" alt="Card Image">
+                                <div
+                                    class="card-body d-flex flex-column justify-content-center align-items-center px-3 px-lg-5">
+                                    <p class="card-title pt-4">27 APR- 4 MAY</p>
+                                    <h3 class="card-text mb-4 pt-2 text-center">Retreat to Mexico & Business Trip To USA
+                                    </h3>
                                 </div>
                             </div>
                         </div>
 
+
+
                     </div>
+
                 </div>
             </div>
 
@@ -660,9 +650,10 @@
         }
 
         @media (max-width:768px) {
-            .event-box .inner{
+            .event-box .inner {
                 height: auto;
             }
+
             .event-box .event-overlay h3 {
                 font-size: 16px;
             }
