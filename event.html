@@ -215,6 +215,149 @@
                 font-size: 30px;
             }
         }
+
+        .event-nav.prev-arrow {
+            position: absolute;
+            left: 42%;
+            top: 34px;
+            cursor: pointer;
+        }
+
+        .event-nav.next-arrow {
+            position: absolute;
+            right: 42%;
+            top: 34px;
+            cursor: pointer;
+        }
+
+        .event-box-slider__arrows .slick-arrow {
+            padding: 0 1px 0 0;
+            opacity: 0.3;
+        }
+
+        .event-box-slider__arrows .slick-arrow:hover {
+            opacity: 0.5;
+        }
+
+        .event-box-slider__arrows .slick-arrow:hover:active {
+            opacity: 0.55;
+        }
+
+        .event-box {
+            font-family: 'stenciletta-solid', sans-serif;
+            font-size: 23px;
+            line-height: 1.15;
+            padding: 15px 0;
+            display: block;
+            color: #000;
+        }
+
+        .event-box .hover {
+            display: none;
+        }
+
+        .event-box span {
+            padding-top: 15px;
+            display: block;
+            max-width: 100%;
+        }
+
+        .event-box .inner {
+            width: 100%;
+            background: #f6f4f4;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            text-align: center;
+            height: 300px;
+            position: relative;
+        }
+
+        .event-box .event-img {
+            position: relative;
+        }
+
+        .event-box .event-overlay {
+            position: absolute;
+            min-height: 80px;
+            width: 100%;
+            background-color: #0e0f3fb3;
+            bottom: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .event-box .event-overlay h3 {
+            color: #fff;
+            font-family: "Montserrat-Bold";
+            font-size: 20px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .event-box .event-overlay p {
+            color: #fff;
+            font-family: "Montserrat-Medium";
+            font-size: 17px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        @media (max-width:1300px) {
+            .event-box .event-overlay h3 {
+                font-size: 18px;
+            }
+
+            .event-box .event-overlay p {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width:768px) {
+            .event-box .event-overlay h3 {
+                font-size: 16px;
+            }
+
+            .event-box .event-overlay p {
+                font-size: 13px;
+            }
+
+            .event-nav.next-arrow {
+                right: 30%;
+            }
+
+            .event-nav.prev-arrow {
+                left: 30%;
+            }
+        }
+
+        @media (max-width: 479px) {
+            .event-box {
+                font-size: 18px;
+            }
+
+            .event-box img {
+                max-width: 50%;
+            }
+
+            .event-box .inner {
+                height: 150px;
+                padding: 10px;
+            }
+        }
     </style>
     <div class="container">
         <div class="container py-5 text-center text-white">
@@ -229,11 +372,11 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
-                            <div class="event-box">
+                            <div class="upcomming-box">
                                 <div class="inner" role="presentation"
                                     style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
 
-                                    <div class="event-overlay">
+                                    <div class="upcomming-overlay">
                                         <h3>Women's Day Celebration</h3>
                                         <p>27 MARCH, 2023</p>
                                     </div>
@@ -469,7 +612,7 @@
             -ms-flex-direction: column;
             flex-direction: column;
             text-align: center;
-            height: 300px;
+            min-height: 300px;
             position: relative;
         }
 
@@ -517,6 +660,9 @@
         }
 
         @media (max-width:768px) {
+            .event-box .inner{
+                height: auto;
+            }
             .event-box .event-overlay h3 {
                 font-size: 16px;
             }
@@ -544,7 +690,6 @@
             }
 
             .event-box .inner {
-                height: 150px;
                 padding: 10px;
             }
         }
