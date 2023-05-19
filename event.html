@@ -653,6 +653,33 @@
             margin: 0px;
         }
 
+        #page_navigation {
+            clear: both;
+            margin: 20px 0;
+        }
+
+        #page_navigation a {
+            padding: 0px 4px;
+            border: 0px solid #2e6da4;
+            margin: 6px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            background: #fff;
+             
+        }
+
+        .active_page {
+            background: #e6c348!important;
+            color: #e6c348 !important;
+        }
+        .previous_link{
+            background: #0f0f3e!important; 
+        }
+        .next_link{
+            background: #0f0f3e!important;
+        }
+
         @media (max-width:1300px) {
             .event-box .event-overlay h3 {
                 font-size: 18px;
@@ -710,11 +737,12 @@
                     <!----- Board Memeber --->
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                         aria-labelledby="pills-home-tab">
-
-                        <div class="event-box-slider ct-js-box-slider">
+                        <input type='hidden' id='current_page' />
+                        <input type='hidden' id='show_per_page' />
+                        <div class="event-box-slider2 ct-js-box-slider">
                             <div class="item">
                                 <div class="container-fluid">
-                                    <div class="row">
+                                    <div class="row" id="pagingBox">
                                         <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
                                             <div class="event-box">
                                                 <div class="inner" role="presentation"
@@ -791,27 +819,9 @@
                                 </div>
                             </div>
 
-                            <div class="item">
-                                <div class="container-fluid">
-                                    <div class="row">
+                            
 
-                                        <!-- <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4" >
-                                            <div class="event-box">
-                                                <div class="inner" role="presentation" style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
-                                                    
-                                                    <div class="event-overlay">
-                                                        <h3>Women's Day Celebration</h3>
-                                                        <p>27 MARCH, 2023</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
-
-                                    </div>
-                                </div>
-                            </div>
-
-
+                            <div id='page_navigation' class="text-center"></div>
                         </div>
 
 
@@ -821,219 +831,32 @@
                     <!----- National Council --->
 
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <div class="boxes_container mt-5">
-
-                            <div class="boxes_element">
-                                <img src="img/club-pic/jairaj-kumar.png" alt="">
-                                <h3>Jairaj Kumar </h3>
-                                <p>Chief Mentor</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/kishore-othapalli.png" alt="">
-                                <h3>Kishore Kothapalli </h3>
-                                <p>President</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/krishna-prasad-chigurupati.png" alt="">
-                                <h3>Krishna Prasad Chigurupati</h3>
-                                <p>Vice-President</p>
-                            </div>
-
-                            <div class="boxes_element">
-                                <img src="img/club-pic/kapil-mehan.png" alt="">
-                                <h3>Kapil Mehan </h3>
-                                <p>Events Chair</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/suresh-challa.png" alt="">
-                                <h3>Suresh Challa </h3>
-                                <p>Finance Chair </p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/rvs_ramakris.png" alt="">
-                                <h3>RVS Ramakrishna </h3>
-                                <p>Communication Chair</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/hemant-sapra.png" alt="">
-                                <h3>Hemant Sapra </h3>
-                                <p>Chair GBR 24 </p>
-                            </div>
-
-                        </div>
+                        
                     </div>
 
 
                     <!----- National Council --->
 
                     <div class="tab-pane fade" id="pills-business" role="tabpanel" aria-labelledby="pills-business-tab">
-                        <div class="boxes_container mt-5">
-                            <div class="boxes_element">
-                                <img src="img/club-pic/jairaj-kumar.png" alt="">
-                                <h3>Jairaj Kumar </h3>
-                                <p>Chief Mentor</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/kishore-othapalli.png" alt="">
-                                <h3>Kishore Kothapalli </h3>
-                                <p>President</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/krishna-prasad-chigurupati.png" alt="">
-                                <h3>Krishna Prasad Chigurupati</h3>
-                                <p>Vice-President</p>
-                            </div>
-
-                            <div class="boxes_element">
-                                <img src="img/club-pic/kapil-mehan.png" alt="">
-                                <h3>Kapil Mehan </h3>
-                                <p>Events Chair</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/suresh-challa.png" alt="">
-                                <h3>Suresh Challa </h3>
-                                <p>Finance Chair </p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/rvs_ramakris.png" alt="">
-                                <h3>RVS Ramakrishna </h3>
-                                <p>Communication Chair</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/hemant-sapra.png" alt="">
-                                <h3>Hemant Sapra </h3>
-                                <p>Chair GBR 24 </p>
-                            </div>
-                        </div>
+                        
                     </div>
 
 
                     <!----- National Council --->
                     <div class="tab-pane fade" id="pills-social" role="tabpanel" aria-labelledby="pills-social-tab">
-                        <div class="boxes_container mt-5">
-                            <div class="boxes_element">
-                                <img src="img/club-pic/jairaj-kumar.png" alt="">
-                                <h3>Jairaj Kumar </h3>
-                                <p>Chief Mentor</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/kishore-othapalli.png" alt="">
-                                <h3>Kishore Kothapalli </h3>
-                                <p>President</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/krishna-prasad-chigurupati.png" alt="">
-                                <h3>Krishna Prasad Chigurupati</h3>
-                                <p>Vice-President</p>
-                            </div>
-
-                            <div class="boxes_element">
-                                <img src="img/club-pic/kapil-mehan.png" alt="">
-                                <h3>Kapil Mehan </h3>
-                                <p>Events Chair</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/suresh-challa.png" alt="">
-                                <h3>Suresh Challa </h3>
-                                <p>Finance Chair </p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/rvs_ramakris.png" alt="">
-                                <h3>RVS Ramakrishna </h3>
-                                <p>Communication Chair</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/hemant-sapra.png" alt="">
-                                <h3>Hemant Sapra </h3>
-                                <p>Chair GBR 24 </p>
-                            </div>
-                        </div>
+                         
                     </div>
 
 
                     <!----- National Council --->
                     <div class="tab-pane fade" id="pills-chapter" role="tabpanel" aria-labelledby="pills-chapter-tab">
-                        <div class="boxes_container mt-5">
-                            <div class="boxes_element">
-                                <img src="img/club-pic/jairaj-kumar.png" alt="">
-                                <h3>Jairaj Kumar </h3>
-                                <p>Chief Mentor</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/kishore-othapalli.png" alt="">
-                                <h3>Kishore Kothapalli </h3>
-                                <p>President</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/krishna-prasad-chigurupati.png" alt="">
-                                <h3>Krishna Prasad Chigurupati</h3>
-                                <p>Vice-President</p>
-                            </div>
-
-                            <div class="boxes_element">
-                                <img src="img/club-pic/kapil-mehan.png" alt="">
-                                <h3>Kapil Mehan </h3>
-                                <p>Events Chair</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/suresh-challa.png" alt="">
-                                <h3>Suresh Challa </h3>
-                                <p>Finance Chair </p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/rvs_ramakris.png" alt="">
-                                <h3>RVS Ramakrishna </h3>
-                                <p>Communication Chair</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/hemant-sapra.png" alt="">
-                                <h3>Hemant Sapra </h3>
-                                <p>Chair GBR 24 </p>
-                            </div>
-                        </div>
+                         
                     </div>
 
 
                     <!----- Annual National --->
                     <div class="tab-pane fade" id="pills-annual" role="tabpanel" aria-labelledby="pills-annual-tab">
-                        <div class="boxes_container mt-5">
-                            <div class="boxes_element">
-                                <img src="img/club-pic/jairaj-kumar.png" alt="">
-                                <h3>Jairaj Kumar </h3>
-                                <p>Chief Mentor</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/kishore-othapalli.png" alt="">
-                                <h3>Kishore Kothapalli </h3>
-                                <p>President</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/krishna-prasad-chigurupati.png" alt="">
-                                <h3>Krishna Prasad Chigurupati</h3>
-                                <p>Vice-President</p>
-                            </div>
-
-                            <div class="boxes_element">
-                                <img src="img/club-pic/kapil-mehan.png" alt="">
-                                <h3>Kapil Mehan </h3>
-                                <p>Events Chair</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/suresh-challa.png" alt="">
-                                <h3>Suresh Challa </h3>
-                                <p>Finance Chair </p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/rvs_ramakris.png" alt="">
-                                <h3>RVS Ramakrishna </h3>
-                                <p>Communication Chair</p>
-                            </div>
-                            <div class="boxes_element">
-                                <img src="img/club-pic/hemant-sapra.png" alt="">
-                                <h3>Hemant Sapra </h3>
-                                <p>Chair GBR 24 </p>
-                            </div>
-                        </div>
+                         
                     </div>
 
 
@@ -1190,7 +1013,9 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
 
+    </script>
 </body>
 
 </html>
