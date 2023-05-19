@@ -188,7 +188,37 @@
 
     <!--- Second Banner Start --->
 
-    <!--- upcomming-event -->
+    <!--- Banner Start --->
+
+<div class="slick-carousel position-relative mb-2 mb-md-5 pb-2 pb-md-5">
+
+    <div class="slide-content text-center text-white">
+			<img class="w-100" src="https://ceoclubsindia.org/wp-content/uploads/2023/05/banner-1-1.webp" loading="lazy">
+		</div>
+
+		<div class="slide-content text-center text-white">
+			<img class="w-100" src="https://ceoclubsindia.org/wp-content/uploads/2023/05/banner-2.webp" loading="lazy">
+		</div>
+
+		<div class="slide-content text-center text-white">
+			<img class="w-100" src="https://ceoclubsindia.org/wp-content/uploads/2023/05/banner-3.webp" loading="lazy">
+
+		</div>
+		<div class="slide-content text-center text-white">
+
+			<img class="w-100" src="https://ceoclubsindia.org/wp-content/uploads/2023/05/banner-4.webp" loading="lazy">
+		</div>
+		<div class="slide-content text-center text-white">
+			<img class="w-100" src="https://ceoclubsindia.org/wp-content/uploads/2023/05/banner-1.webp" loading="lazy">
+		</div>
+
+</div>
+
+<!--- Second Banner Start --->
+<!-- <img class="w-100" src="img/banner-1.jpg"> -->
+<!--- Banner End -->
+
+      <!--- upcomming-event -->
     <style>
         .upcomming-event h1::before {
             content: '';
@@ -265,6 +295,9 @@
             padding: 0px;
             margin: 0px;
         }
+        .slick-slide img{
+                border-radius: 13px 13px 0px 0px;
+        }
 
         @media(max-width:768px) {
             .upcomming-box-slider h3 {
@@ -292,98 +325,107 @@
                 right: 30%;
             }
         }
+        
+         #page_navigation7 {
+            clear: both;
+            margin: 20px 0;
+        }
+
+        #page_navigation7 a {
+            padding: 0px 4px;
+            border: 0px solid #2e6da4;
+            margin: 6px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            background: #fff;
+
+        }
+
+        .active_page7 {
+            background: #e6c348 !important;
+            color: #e6c348 !important;
+        }
+
+        .previous_link7 {
+            background: #0f0f3e !important;
+        }
+
+        .next_link7 {
+            background: #0f0f3e !important;
+        }
+        .upcomming-box-slider img{
+        border-radius:13px 13px 0px 0px;
+        }
     </style>
-    <div class="container">
+    <div class="container pb-5">
         <div class="container py-5 text-center text-white">
             <div class="upcomming-event mt-3 pb-5">
                 <h1 class="pb-3 mt-0">Upcoming Events</h1>
                 <!-- <p class="mt-5 pt-3 "> TExt</p> -->
             </div>
         </div>
-
+		
+         <input type='hidden' id='current_page7' />
+        <input type='hidden' id='show_per_page7' />
         <div class="upcomming-box-slider ct-js-box-slider">
             <div class="item">
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="row" id="pagingBox7">
                         <!--ADD CLASSES HERE d-flex align-items-stretch-->
                         <div
-                            class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3 d-flex align-items-stretch py-0 py-sm-0 py-md-4 py-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
-                            <div class="card">
-                                <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/upcomming-1.webp"
+                            class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3  py-0 py-sm-0 py-md-4 py-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                            <div class="card  h-100">
+                                <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/knowledge-series.png"
                                     class="card-img-top" alt="Card Image">
                                 <div
-                                    class="card-body d-flex flex-column justify-content-center align-items-center px-3 px-lg-5">
-                                    <p class="card-title pt-4">27 APR- 4 MAY</p>
-                                    <h3 class="card-text mb-4 pt-2 text-center">Retreat to Mexico & Business Trip To USA
+                                    class="card-body d-flex flex-column justify-content-top align-items-center px-3 px-lg-4">
+                                    <p class="card-title pt-2">27 MAY</p>
+                                    <h3 class="card-text mb-2 pt-0 text-center">Technology Companies - Funded Vs Bootstrap
                                     </h3>
                                 </div>
                             </div>
                         </div>
                         <div
-                            class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3 d-flex align-items-stretch py-0 py-sm-0 py-md-4 py-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
-                            <div class="card">
-                                <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/upcomming-1.webp"
+                            class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3  py-0 py-sm-0 py-md-4 py-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                            <div class="card  h-100">
+                                <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/know-your-member-series.png"
                                     class="card-img-top" alt="Card Image">
                                 <div
-                                    class="card-body d-flex flex-column justify-content-center align-items-center px-3 px-lg-5">
-                                    <p class="card-title pt-4">27 APR- 4 MAY</p>
-                                    <h3 class="card-text mb-4 pt-2 text-center">Retreat to Mexico & Business Trip To USA
+                                    class="card-body d-flex flex-column justify-content-top align-items-center px-3 px-lg-4">
+                                    <p class="card-title pt-2">3 MAY</p>
+                                    <h3 class="card-text mb-2 pt-0 text-center">Know Your Member Series
                                     </h3>
                                 </div>
                             </div>
                         </div>
                         <div
-                            class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3 d-flex align-items-stretch py-0 py-sm-0 py-md-4 py-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
-                            <div class="card">
-                                <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/upcomming-1.webp"
+                            class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3  py-0 py-sm-0 py-md-4 py-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                            <div class="card  h-100">
+                                <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/storytelling-series.png"
                                     class="card-img-top" alt="Card Image">
                                 <div
-                                    class="card-body d-flex flex-column justify-content-center align-items-center px-3 px-lg-5">
-                                    <p class="card-title pt-4">27 APR- 4 MAY</p>
-                                    <h3 class="card-text mb-4 pt-2 text-center">Retreat to Mexico & Business Trip To USA
+                                    class="card-body d-flex flex-column justify-content-top align-items-center px-3 px-lg-4">
+                                    <p class="card-title pt-2">19 MAY</p>
+                                    <h3 class="card-text mb-2 pt-0 text-center">Storytelling by CEOs
                                     </h3>
                                 </div>
                             </div>
                         </div>
                         <div
-                            class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3 d-flex align-items-stretch py-0 py-sm-0 py-md-4 py-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
-                            <div class="card">
-                                <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/upcomming-1.webp"
+                            class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3 py-0 py-sm-0 py-md-4 py-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                            <div class="card  h-100">
+                                <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/member-series.png"
                                     class="card-img-top" alt="Card Image">
                                 <div
-                                    class="card-body d-flex flex-column justify-content-center align-items-center px-3 px-lg-5">
-                                    <p class="card-title pt-4">27 APR- 4 MAY</p>
-                                    <h3 class="card-text mb-4 pt-2 text-center">Retreat to Mexico & Business Trip To USA
+                                    class="card-body d-flex flex-column justify-content-top align-items-center px-3 px-lg-4">
+                                    <p class="card-title pt-2">27 MAY</p>
+                                    <h3 class="card-text mb-2 pt-0 text-center">Future of Online Gaming
                                     </h3>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3 d-flex align-items-stretch py-0 py-sm-0 py-md-4 py-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
-                            <div class="card">
-                                <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/upcomming-1.webp"
-                                    class="card-img-top" alt="Card Image">
-                                <div
-                                    class="card-body d-flex flex-column justify-content-center align-items-center px-3 px-lg-5">
-                                    <p class="card-title pt-4">27 APR- 4 MAY</p>
-                                    <h3 class="card-text mb-4 pt-2 text-center">Retreat to Mexico & Business Trip To USA
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3 d-flex align-items-stretch py-0 py-sm-0 py-md-4 py-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
-                            <div class="card">
-                                <img src="https://ceoclubsindia.org/wp-content/uploads/2023/05/upcomming-1.webp"
-                                    class="card-img-top" alt="Card Image">
-                                <div
-                                    class="card-body d-flex flex-column justify-content-center align-items-center px-3 px-lg-5">
-                                    <p class="card-title pt-4">27 APR- 4 MAY</p>
-                                    <h3 class="card-text mb-4 pt-2 text-center">Retreat to Mexico & Business Trip To USA
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
+                        
 
 
 
@@ -391,26 +433,7 @@
 
                 </div>
             </div>
-
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="row">
-
-                        <!-- <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4" >
-                                            <div class="event-box">
-                                                <div class="inner" role="presentation" style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
-                                                    
-                                                    <div class="event-overlay">
-                                                        <h3>Women's Day Celebration</h3>
-                                                        <p>27 MARCH, 2023</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
-
-                    </div>
-                </div>
-            </div>
+ 				 <div id='page_navigation7' class="text-center"></div>
 
 
         </div>
@@ -471,7 +494,7 @@
             }
         }
     </style>
-    <div class="container">
+    <div class="container pt-5">
         <div class="container py-5 text-center text-white">
             <div class="main-event mt-3 pb-5">
                 <h1 class="pb-3 mt-0">Events Gallery</h1>
@@ -755,66 +778,74 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                         <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
                                             <div class="event-box">
                                                 <div class="inner" role="presentation"
-                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Visit-Rwanda-Golf-Tournament.png');background-size: cover;">
 
                                                     <div class="event-overlay">
-                                                        <h3>Women's Day Celebration</h3>
-                                                        <p>27 MARCH, 2023</p>
+                                                        <h3>Visit Rwanda Golf Tournament</h3>
+                                                        <p>15 FEB, 2023</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                         <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
                                             <div class="event-box">
                                                 <div class="inner" role="presentation"
-                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Networking-session-at-HongQi-UAE.png');background-size: cover;">
 
                                                     <div class="event-overlay">
-                                                        <h3>Women's Day Celebration</h3>
-                                                        <p>27 MARCH, 2023</p>
+                                                        <h3>Networking session at HongQi UAE</h3>
+                                                        <p>8 FEB, 2023</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                         
+                                       
                                         <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
                                             <div class="event-box">
                                                 <div class="inner" role="presentation"
-                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/CEO-Clubs-Shark-Tank.png');background-size: cover;">
 
                                                     <div class="event-overlay">
-                                                        <h3>Women's Day Celebration</h3>
-                                                        <p>27 MARCH, 2023</p>
+                                                        <h3>CEO Clubs Shark Tank</h3>
+                                                        <p>24 JAN, 2023</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                         <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
                                             <div class="event-box">
                                                 <div class="inner" role="presentation"
-                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/CCMP-at-GTC.png');background-size: cover;">
 
                                                     <div class="event-overlay">
-                                                        <h3>Women's Day Celebration</h3>
-                                                        <p>27 MARCH, 2023</p>
+                                                        <h3>CCMP at GTC</h3>
+                                                        <p>19 JAN, 2023</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                         <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
                                             <div class="event-box">
                                                 <div class="inner" role="presentation"
-                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Networking-session-at-HongQi-UAE2.png');background-size: cover;">
 
                                                     <div class="event-overlay">
-                                                        <h3>Women's Day Celebration</h3>
-                                                        <p>27 MARCH, 2023</p>
+                                                        <h3>Networking session at HongQi UAE</h3>
+                                                        <p>8 FEB, 2023</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -829,33 +860,352 @@
 
 
                     <!----- National Council --->
+					<style>
+                        #page_navigation2 {
+                            clear: both;
+                            margin: 20px 0;
+                        }
+
+                        #page_navigation2 a {
+                            padding: 0px 4px;
+                            border: 0px solid #2e6da4;
+                            margin: 6px;
+                            color: #fff;
+                            text-decoration: none;
+                            border-radius: 30px;
+                            background: #fff;
+
+                        }
+
+                        .active_page2 {
+                            background: #e6c348 !important;
+                            color: #e6c348 !important;
+                        }
+
+                        .previous_link2 {
+                            background: #0f0f3e !important;
+                        }
+
+                        .next_link2 {
+                            background: #0f0f3e !important;
+                        }
+                    </style>
+                    <!----- Knowledge & Lead. --->
 
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        
+                        <!----inner circle---->
+                        <input type='hidden' id='current_page2' />
+                        <input type='hidden' id='show_per_page2' />
+                        <div class="event-box-slider2 ct-js-box-slider">
+                            <div class="item">
+                                <div class="container-fluid">
+                                    <div class="row" id="pagingBox2">
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation"
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
+
+                                                    <div class="event-overlay">
+                                                        <h3>Women's Day Celebration</h3>
+                                                        <p>27 MARCH, 2023</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation"
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
+
+                                                    <div class="event-overlay">
+                                                        <h3>wwwWomen's Day Celebration</h3>
+                                                        <p>28 MARCH, 2023</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id='page_navigation2' class="text-center"></div>
+                        </div>
+                        <!----inner circle---->
                     </div>
 
 
                     <!----- National Council --->
+ 
+					<style>
+                        #page_navigation3 {
+                            clear: both;
+                            margin: 20px 0;
+                        }
 
+                        #page_navigation3 a {
+                            padding: 0px 4px;
+                            border: 0px solid #2e6da4;
+                            margin: 6px;
+                            color: #fff;
+                            text-decoration: none;
+                            border-radius: 30px;
+                            background: #fff;
+
+                        }
+
+                        .active_page3 {
+                            background: #e6c348 !important;
+                            color: #e6c348 !important;
+                        }
+
+                        .previous_link3 {
+                            background: #0f0f3e !important;
+                        }
+
+                        .next_link3 {
+                            background: #0f0f3e !important;
+                        }
+                    </style>
+                    <!----- Knowledge & Lead. --->
                     <div class="tab-pane fade" id="pills-business" role="tabpanel" aria-labelledby="pills-business-tab">
                         
+                        <!----inner circle---->
+                        <input type='hidden' id='current_page3' />
+                        <input type='hidden' id='show_per_page3' />
+                        <div class="event-box-slider2 ct-js-box-slider">
+                            <div class="item">
+                                <div class="container-fluid">
+                                    <div class="row" id="pagingBox3">
+                                     
+                                     <!--
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation"
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
+
+                                                    <div class="event-overlay">
+                                                        <h3>Women's Day Celebration</h3>
+                                                        <p>27 MARCH, 2023</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>-->
+                                        
+                                          
+                                        
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id='page_navigation3' class="text-center"></div>
+                        </div>
+                        <!----inner circle---->
+                        
                     </div>
 
 
                     <!----- National Council --->
+                     <!----- National Council --->
+					<style>
+                        #page_navigation4 {
+                            clear: both;
+                            margin: 20px 0;
+                        }
+
+                        #page_navigation4 a {
+                            padding: 0px 4px;
+                            border: 0px solid #2e6da4;
+                            margin: 6px;
+                            color: #fff;
+                            text-decoration: none;
+                            border-radius: 30px;
+                            background: #fff;
+
+                        }
+
+                        .active_page4 {
+                            background: #e6c348 !important;
+                            color: #e6c348 !important;
+                        }
+
+                        .previous_link4 {
+                            background: #0f0f3e !important;
+                        }
+
+                        .next_link4 {
+                            background: #0f0f3e !important;
+                        }
+                    </style>
+                    <!----- Knowledge & Lead. --->
                     <div class="tab-pane fade" id="pills-social" role="tabpanel" aria-labelledby="pills-social-tab">
                          
-                    </div>
+                          <!----inner circle---->
+                        <input type='hidden' id='current_page4' />
+                        <input type='hidden' id='show_per_page4' />
+                        <div class="event-box-slider2 ct-js-box-slider">
+                            <div class="item">
+                                <div class="container-fluid">
+                                    <div class="row" id="pagingBox4">
+                                    
+                                        <!--<div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation"
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
+
+                                                    <div class="event-overlay">
+                                                        <h3>Women's Day Celebration</h3>
+                                                        <p>27 MARCH, 2023</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>-->
+                                        
 
 
-                    <!----- National Council --->
-                    <div class="tab-pane fade" id="pills-chapter" role="tabpanel" aria-labelledby="pills-chapter-tab">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id='page_navigation4' class="text-center"></div>
+                        </div>
+                        <!----inner circle---->
                          
                     </div>
 
+						 <!----- National Council --->
+					<style>
+                        #page_navigation5 {
+                            clear: both;
+                            margin: 20px 0;
+                        }
 
+                        #page_navigation5 a {
+                            padding: 0px 4px;
+                            border: 0px solid #2e6da4;
+                            margin: 6px;
+                            color: #fff;
+                            text-decoration: none;
+                            border-radius: 30px;
+                            background: #fff;
+
+                        }
+
+                        .active_page5 {
+                            background: #e6c348 !important;
+                            color: #e6c348 !important;
+                        }
+
+                        .previous_link5 {
+                            background: #0f0f3e !important;
+                        }
+
+                        .next_link5 {
+                            background: #0f0f3e !important;
+                        }
+                    </style> 
+                    <!----- National Council --->
+                    <div class="tab-pane fade" id="pills-chapter" role="tabpanel" aria-labelledby="pills-chapter-tab">
+                          <!----inner circle---->
+                        <input type='hidden' id='current_page5' />
+                        <input type='hidden' id='show_per_page5' />
+                        <div class="event-box-slider2 ct-js-box-slider">
+                            <div class="item">
+                                <div class="container-fluid">
+                                    <div class="row" id="pagingBox5">
+                                    
+                                       <!-- <div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation"
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
+
+                                                    <div class="event-overlay">
+                                                        <h3>Women's Day Celebration</h3>
+                                                        <p>27 MARCH, 2023</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>-->
+                                        
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id='page_navigation5' class="text-center"></div>
+                        </div>
+                        <!----inner circle---->
+                    </div>
+
+ <!----- National Council --->
+					<style>
+                        #page_navigation6 {
+                            clear: both;
+                            margin: 20px 0;
+                        }
+
+                        #page_navigation6 a {
+                            padding: 0px 4px;
+                            border: 0px solid #2e6da4;
+                            margin: 6px;
+                            color: #fff;
+                            text-decoration: none;
+                            border-radius: 30px;
+                            background: #fff;
+
+                        }
+
+                        .active_page6 {
+                            background: #e6c348 !important;
+                            color: #e6c348 !important;
+                        }
+
+                        .previous_link6 {
+                            background: #0f0f3e !important;
+                        }
+
+                        .next_link6 {
+                            background: #0f0f3e !important;
+                        }
+                    </style>
+                    <!----- Knowledge & Lead. --->
                     <!----- Annual National --->
                     <div class="tab-pane fade" id="pills-annual" role="tabpanel" aria-labelledby="pills-annual-tab">
+                         
+                          <!----inner circle---->
+                        <input type='hidden' id='current_page6' />
+                        <input type='hidden' id='show_per_page6' />
+                        <div class="event-box-slider2 ct-js-box-slider">
+                            <div class="item">
+                                <div class="container-fluid">
+                                    <div class="row" id="pagingBox6">
+                                    
+                                        <!--<div class="col-12 col-sm-12 col-md-6 col-lg-4 px-0 px-sm-0 px-md-4 px-lg-4">
+                                            <div class="event-box">
+                                                <div class="inner" role="presentation"
+                                                    style="background-image:url('https://ceoclubsindia.org/wp-content/uploads/2023/05/Womens-Day-Celebration.webp');background-size: cover;">
+
+                                                    <div class="event-overlay">
+                                                        <h3>Women's Day Celebration</h3>
+                                                        <p>27 MARCH, 2023</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>-->
+                                        
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id='page_navigation6' class="text-center"></div>
+                        </div>
+                        <!----inner circle---->
                          
                     </div>
 
@@ -879,6 +1229,7 @@
         <div style="border:1px solid #ebc848; width:100%;text-align:center;margin:40px auto 0 auto;"></div>
     </div>
     <!-----Border---->
+    <!-- footer -->
     <!-- footer -->
     <footer class="footer" role="contentinfo" id="footer_scroll">
         <div class="container">
